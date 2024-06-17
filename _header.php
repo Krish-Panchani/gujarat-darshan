@@ -25,9 +25,30 @@
     <!-- <link href="https://unpkg.com/tailwindcss@1.2.0/dist/tailwind.min.css" rel="stylesheet"> -->
     <title>Best Tour Operator in Ahmedabad, Gujarat</title>
 
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="css/index.css">
     <script src="/js/jquery.min.js"></script>
-    <link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<style>
+    .swiper-wrapper {
+      width: 100%;
+      height: max-content !important;
+      padding-bottom: 64px !important;
+      -webkit-transition-timing-function: linear !important;
+      transition-timing-function: linear !important;
+      position: relative;
+      }
+      .swiper-pagination-bullet {
+      background: #4F46E5;
+      }
+      .swiper-pagination-bullet-active {
+      background: #4F46E5 !important;
+      }
+</style>
 </head>
 <body>
