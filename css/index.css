@@ -1,0 +1,20 @@
+.swiper-wrapper {
+    width: 100%;
+    height: max-content !important;
+    padding-bottom: 64px !important;
+    -webkit-transition-timing-function: linear !important;
+    transition-timing-function: linear !important;
+    position: relative;
+    }
+    .swiper-pagination-bullet {
+    background: #e59346;
+    }
+    .swiper-pagination-bullet-active {
+    background: #e59346 !important;
+    }
+
+    .bg1{
+        background-image: url('../images/BANNER-GUJ-1.jpg');
+        background-position: center;
+        background-size: cover;
+    }
