@@ -18,10 +18,8 @@ $dropdownLinkClass = "block px-4 py-2 mt-2 text-sm font-semibold bg-transparent 
             </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-            <a class="<?php echo $linkClass;?>" href="#">Blog</a>
+            <a class="<?php echo $linkClass;?>" href="#">Home</a>
             <a class="<?php echo $linkClass;?>" href="#">Portfolio</a>
-            <a class="<?php echo $linkClass;?>" href="#">About</a>
-            <a class="<?php echo $linkClass;?>" href="#">Contact</a>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
                 <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                     <span>Dropdown</span>
@@ -37,6 +35,8 @@ $dropdownLinkClass = "block px-4 py-2 mt-2 text-sm font-semibold bg-transparent 
                     </div>
                 </div>
             </div>
+                <a class="<?php echo $linkClass;?>" href="#">About</a>
+                <a class="<?php echo $linkClass;?>" href="#">Contact</a>
         </nav>
     </div>
 </div>
