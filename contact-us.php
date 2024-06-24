@@ -16,18 +16,18 @@ require_once "_header.php"; ?>
     "></div>
     <div class="relative">
 
-        <section >
-            <div class="container px-6 py-12 mx-auto">
-                <div class="lg:flex lg:items-center px-12 lg:-mx-6">
+        <section>
+            <div class="max-w-screen-xl mx-auto px-4 py-16 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
+                <div class="lg:flex lg:items-center px-4 sm:px-12">
                     <div class="lg:w-1/2 lg:mx-6">
-                    <div class="flex flex-col space-y-5 max-w-xl justify-between ">
-                    <h1 class="text-4xl text-gray-800 font-extrabold sm:text-5xl">
-                        Contact <span class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">Gujarat Darshan</span>
-                    </h1>
-                    <p>
-                        From accommodation and transportation to sightseeing and activities, we take care of all your travel needs. Discover the wonders of Gujarat with Gujarat Darshan
-                    </p>
-                    </div>
+                        <div class="flex flex-col space-y-5 max-w-xl justify-between ">
+                            <h1 class="text-4xl text-gray-800 font-extrabold sm:text-5xl">
+                                Contact <span class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">Gujarat Darshan</span>
+                            </h1>
+                            <p>
+                                From accommodation and transportation to sightseeing and activities, we take care of all your travel needs. Discover the wonders of Gujarat with Gujarat Darshan
+                            </p>
+                        </div>
                         <div class="mt-6 space-y-8 md:mt-8">
                             <p class="flex items-start -mx-2">
                                 <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 mx-2 text-green-500 dark:text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
@@ -92,7 +92,7 @@ require_once "_header.php"; ?>
                     </div>
 
                     <div class="mt-8 lg:w-1/2 lg:mx-6">
-                        <div class="w-full px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
+                        <div class="w-full px-4 sm:px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
                             <h1 class="text-lg font-medium text-gray-700">Get a Free Quote / Booking Inquiry</h1>
 
                             <form class="mt-6">
