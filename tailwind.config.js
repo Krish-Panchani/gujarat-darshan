@@ -4,6 +4,7 @@ module.exports = {
   content: [
     "./*.php",
     "./components/*.php",
+    "./Hotels/*.php",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
