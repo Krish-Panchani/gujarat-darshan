@@ -74,7 +74,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                 </button>
                 <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute bg-white right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-60 z-50">
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow ">
-                        <a class="block <?php echo $dropdownLinkClass;?>" href="#">Hotels in Somnath</a>
+                        <a class="block <?php echo $dropdownLinkClass;?>" href="Hotels/Hotels-in-somnath">Hotels in Somnath</a>
                         <a class="block <?php echo $dropdownLinkClass;?>" href="#">Hotels in Dwarka</a>
                         <a class="block <?php echo $dropdownLinkClass;?>" href="#">Hotels in Ahmedabad</a>
                         <a class="block <?php echo $dropdownLinkClass;?>" href="#">Hotels in Gir</a>
