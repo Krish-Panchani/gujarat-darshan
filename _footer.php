@@ -5,41 +5,51 @@
                 <a href="#" class="flex items-center">
                     <img class="w-40" src="logo.png" alt="Logo">
                 </a>
+                <p class="mt-4 max-w-sm">Looking for a reliable and affordable tour operator in Ahmedabad? Look no further than Gujarat Darshan!</p>
             </div>
-            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-3">
+            <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Resources</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Quick links</h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline">Flowbite</a>
+                            <a href="#" class="hover:underline">Home</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/about-us" class="hover:underline">About Us</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Tailwind CSS</a>
+                            <a href="/contact-us" class="hover:underline">Car Hire</a>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Follow us</h2>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Services</h2>
                     <ul class="text-gray-500 font-medium">
                         <li class="mb-4">
-                            <a href="#" class="hover:underline ">Github</a>
+                            <a href="#" class="hover:underline ">Tempo Hire</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="#" class="hover:underline">Bus Hire</a>
                         </li>
                         <li>
-                            <a href="#" class="hover:underline">Discord</a>
+                            <a href="#" class="hover:underline">Car Hire</a>
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Legal</h2>
-                    <ul class="text-gray-500 font-medium">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Privacy Policy</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline">Terms &amp; Conditions</a>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+            <div class="mt-8 sm:mt-0">
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Contact info</h2>
+                <ul class="text-gray-500 font-medium max-w-sm">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">+91-9512646767</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">info.bookingservice9558@gmail.com</a>
+                    </li>
+                    <li>
+                        <a href="#" class="hover:underline max-w-sm">M-106 - Swaminarayan Park-1, Opp. Mangaldeep Vidyalaya, New Vadaj, Ahmedabad</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
@@ -81,12 +91,12 @@
         </div>
     </div>
 </footer>
-    <section class="relative">
-        <div class="relative text-center z-10">
-            <h3 class="text-sm sm:text-base bg-gray-900 text-white py-4 px-2">Design & Developed by <a class="font-bold text-cyan-400 uppercase cursor-pointer" href="https://www.thunderdevelops.in" target="_blank">Thunder Develops</a></h3>
-        </div>
-        <div class="absolute inset-0 max-w-md mx-auto h-12s blur-[118px]" style="background: linear-gradient(152.92deg, rgba(0, 255, 255, 0.2) 4.54%, rgba(0, 255, 255, 0.26) 34.2%, rgba(0, 255, 255, 0.1) 77.55%)"></div>
-    </section>
+<section class="relative">
+    <div class="relative text-center z-10">
+        <h3 class="text-sm sm:text-base bg-gray-900 text-white py-4 px-2">Design & Developed by <a class="font-bold text-cyan-400 uppercase cursor-pointer" href="https://www.thunderdevelops.in" target="_blank">Thunder Develops</a></h3>
+    </div>
+    <div class="absolute inset-0 max-w-md mx-auto h-12s blur-[118px]" style="background: linear-gradient(152.92deg, rgba(0, 255, 255, 0.2) 4.54%, rgba(0, 255, 255, 0.26) 34.2%, rgba(0, 255, 255, 0.1) 77.55%)"></div>
+</section>
 
 </body>
 
