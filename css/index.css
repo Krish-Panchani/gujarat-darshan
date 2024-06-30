@@ -5,16 +5,45 @@
     -webkit-transition-timing-function: linear !important;
     transition-timing-function: linear !important;
     position: relative;
-    }
-    .swiper-pagination-bullet {
-    background: #e59346;
-    }
-    .swiper-pagination-bullet-active {
-    background: #e59346 !important;
-    }
+}
 
-    .bg1{
-        background-image: url('../images/BANNER-GUJ-1.jpg');
-        background-position: center;
-        background-size: cover;
-    }
+.swiper-pagination-bullet {
+    background: #e59346;
+}
+
+.swiper-pagination-bullet-active {
+    background: #e59346 !important;
+}
+
+.bg1 {
+    background-image: url('../images/home1.jpg');
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.bg2 {
+    background-image: url('../images/home2.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.bg3 {
+    background-image: url('../images/home3.jpg');
+    background-position: center;
+    background-size: cover;
+}
+
+.slide-div{
+    background:
+    /* top, transparent black, faked with gradient */
+    linear-gradient(rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.637));
+
+  /* Center and scale the image nicely */
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  overflow: hidden;
+  z-index: 1;
+}
