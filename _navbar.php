@@ -20,7 +20,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
             </button>
         </div>
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
-            <a class="<?php echo $linkClass; ?>" href="#">Home</a>
+            <a class="<?php echo $linkClass; ?>" href="/gujarattravels/">Home</a>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
             <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                     <span class="text-base font-bold">Tour Packages</span>
@@ -30,18 +30,26 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                 </button>
                 <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-60 z-50">
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="tour-packages\Rann-of-kutch-package.php">Rann of kutch package</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Dwarka tour packages</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">somnath tour packages</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">dwarka somnath tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">pancha dwarka yatra</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">statue of unity tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">saurashtra tour ahmedabad</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">gir jungle safari</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">gujarat diu tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">best of kutch tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">colours of gujarat tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">gujarat desert beach tour</a>
+                        <?php
+                        $menuItems = [
+                            'Rann of kutch package' => '/gujarattravels/tour-packages/rann-of-kutch-package.php',
+                            'Dwarka tour packages' => '/gujarattravels/tour-packages/dwarka-tour-packages.php',
+                            'somnath tour packages' => '/gujarattravels/tour-packages/somnath-tour-packages.php',
+                            'dwarka somnath tour' => '/gujarattravels/tour-packages/dwarka-somnath-tour.php',
+                            'pancha dwarka yatra' => '/gujarattravels/tour-packages/pancha-dwarka-yatra.php',
+                            'statue of unity tour' => '/gujarattravels/tour-packages/statue-of-unity-tour.php',
+                            'saurashtra tour ahmedabad' => '/gujarattravels/tour-packages/saurashtra-tour-ahmedabad.php',
+                            'gir jungle safari' => '/gujarattravels/tour-packages/gir-jungle-safari.php',
+                            'gujarat diu tour' => '/gujarattravels/tour-packages/gujarat-diu-tour.php',
+                            'best of kutch tour' => '/gujarattravels/tour-packages/best-of-kutch-tour.php',
+                            'colours of gujarat tour' => '/gujarattravels/tour-packages/colours-of-gujarat-tour.php',
+                            'gujarat desert beach tour' => '/gujarattravels/tour-packages/gujarat-desert-beach-tour.php'
+                        ];
+                        ?>
+
+                        <?php foreach ($menuItems as $text => $link): ?>
+                            <a class="block <?php echo $dropdownLinkClass; ?>" href="<?php echo $link; ?>"><?php echo $text; ?></a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
@@ -76,19 +84,27 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                 </button>
                 <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute bg-white right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-60 z-50">
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow ">
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="Hotels/Hotels-in-somnath">Hotels in Somnath</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Hotels in Dwarka</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Hotels in Ahmedabad</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Hotels in Gir</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Hotels in Diu</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Hotels in Rajkot</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="#">Hotels in Rann of Kutch</a>
+                        <?php
+                        $hotels = [
+                            'Hotels in Somnath' => '/gujarattravels/Hotels/Hotels-in-somnath',
+                            'Hotels in Dwarka' => '/gujarattravels/Hotels/Hotels-in-Dwarka.php',
+                            'Hotels in Ahmedabad' => '/gujarattravels/Hotels/Hotels-in-Ahmedabad.php',
+                            'Hotels in Gir' => '/gujarattravels/Hotels/Hotels-in-Gir.php',
+                            'Hotels in Diu' => '/gujarattravels/Hotels/Hotels-in-Diu.php',
+                            'Hotels in Rajkot' => '/gujarattravels/Hotels/Hotels-in-Rajkot.php',
+                            'Hotels in Rann of Kutch' => '/gujarattravels/Hotels/Hotels-in-Rann-of-Kutch.php'
+                        ];
+                        ?>
+
+                        <?php foreach ($hotels as $text => $link): ?>
+                            <a class="block <?php echo $dropdownLinkClass; ?>" href="<?php echo $link; ?>"><?php echo $text; ?></a>
+                        <?php endforeach; ?>
                     </div>
                 </div>
             </div>
 
-            <a class="<?php echo $linkClass; ?>" href="#">About</a>
-            <a class="<?php echo $linkClass; ?>" href="#">Contact</a>
+            <a class="<?php echo $linkClass; ?>" href="/gujarattravels/about-us">About</a>
+            <a class="<?php echo $linkClass; ?>" href="/gujarattravels/contact-us">Contact</a>
         </nav>
     </div>
 </div>
