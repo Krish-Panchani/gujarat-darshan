@@ -19,7 +19,7 @@ require_once "_header.php"; ?>
         <!-- Section -->
         <section>
             <div class="max-w-screen-xl mx-auto px-4 py-16 gap-12 text-gray-600 overflow-hidden md:px-8 md:flex">
-                <div class="flex flex-col space-y-5 max-w-xl justify-between ">
+                <div class="flex flex-col space-y-5  justify-between ">
                     <!-- <a href="javascript:void(0)" class="inline-flex gap-x-6 items-center rounded-full p-1 pr-6 border text-sm font-medium duration-150 hover:bg-white">
                         <span class="inline-block rounded-full px-3 py-1 bg-indigo-600 text-white">
                             News
@@ -32,20 +32,18 @@ require_once "_header.php"; ?>
                         </p>
                     </a> -->
                     <h1 class="text-4xl text-gray-800 font-extrabold sm:text-5xl">
-                        About <span class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">Gujarat Darshan</span>
+                        Hire <span class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">Bus </span>
+                        In Ahmedabad
                     </h1>
-                    <p>We at <strong>Gujarat Darshan</strong> offers various type of <strong>Tour Packages, Travel Packages</strong> and also provide<a class="text-red-400 font-bold" href="https://www.gujaratdarshans.com/car-hire-in-ahmedabad/"> Car rental service</a>. Your complete package to travel your destination at one stop. Our passion to provide the best packages is to make your holidays more memorable and beautiful.
-
+                    <p><strong>Luxury bus hire in Ahmedabad</strong>, Gujarat is an excellent option for those looking to travel around the state. Not only is it an affordable way to get around, but it also allows you to see the sights and sounds of the state at your own pace.
                     </p>
-                    <p>
-                        Every destination has its own beauty , and we make sure to give you the perfect holiday destination as you thought for! <strong>Packages for Family Trip</strong>, Honeymoon Trip, Solo trip, Business holiday, etc. Relax and leave on us about your travel planning!
+                    <p>Gujarat Darshan is one of the most trusted tour and travel company in Ahmedabad. We offer best in class <strong>bus rental services</strong> for all types of occasions like local sightseeing, outstation trip, corporate events and wedding functions. We have a wide fleet of buses that includes Luxury, Volvo, Semi-Sleeper and Sleeper buses. All our buses are driven by experienced drivers and well-maintained to ensure a safe and comfortable journey.
                     </p>
-                    <p>
-                        From accommodation and transportation to sightseeing and activities, we take care of all your travel needs. Discover the wonders of Gujarat with Gujarat Darshan
+                    <p>Hiring a bus in Ahmedabad is a great way to explore the state and its many attractions.
                     </p>
                     <div class="flex items-center gap-x-3 text-sm sm:text-xs">
-                        <a href="javascript:void(0)" class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
-                            View Car Rentals
+                        <a href="#buses" class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
+                            View Buses
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                                 <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
                             </svg>
@@ -58,14 +56,121 @@ require_once "_header.php"; ?>
                         </a>
                     </div>
                 </div>
-                <div class="flex-1 sm:pt-4 pt-12">
-                    <!-- Replace with your image -->
+
+                <!-- <div class="flex-1 sm:pt-4 pt-12">
                     <img src="./images/about-img.webp" class="max-w-xs sm:max-w-md " />
-                </div>
+                </div> -->
             </div>
         </section>
     </div>
 </div>
+<section class="py-14" id="buses">
+    <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
+        <div class="relative max-w-2xl mx-auto sm:text-center">
+            <div class="relative z-10">
+                <h2 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    Luxury Bus on Rent in Ahmedabad
+                </h2>
+            </div>
+            <div class="absolute inset-0 max-w-xs mx-auto h-44 blur-[118px]" style="
+          background: linear-gradient(
+            152.92deg,
+            rgba(192, 132, 252, 0.2) 4.54%,
+            rgba(232, 121, 249, 0.26) 34.2%,
+            rgba(192, 132, 252, 0.1) 77.55%
+          );
+        "></div>
+        </div>
+        <div class="relative mt-12">
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 w-f">
+                <?php
+                $services = [
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '20 Seater Mini Bus',
+                        'tag' => '20 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '25 Seater Mini Bus',
+                        'tag' => '25 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '33 Seater Mini Bus',
+                        'tag' => '33 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '36 Seater Mini Bus',
+                        'tag' => '36 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '39 Seater Mini Bus',
+                        'tag' => '39 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '41 Seater Mini Bus',
+                        'tag' => '41 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '45 Seater Mini Bus',
+                        'tag' => '45 People + 1 Cheaffeur',
+                    ],
+                    [
+                        'image' => 'bus-hire.png',
+                        'title' => '49 Seater Mini Bus',
+                        'tag' => '`49 People + 1 Cheaffeur',
+                    ],
+                ];
+
+                foreach ($services as $service) {
+                ?>
+                    <div class="bg-white space-y-3 p-4 border-2 border-red-400 rounded-lg">
+                        <img class="object-cover object-center" src="images/<?php echo $service['image']; ?>" alt="<?php echo $service['title']; ?>">
+                        <h3 class="text-lg font-semibold text-gray-800 text-center"><?php echo $service['title']; ?></h3>
+                        <ul class="flex flex-col">
+                            <li class="flex items-center text-base mt-2">
+                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
+                                </svg>
+                                <?php echo $service['tag']; ?>
+                            </li>
+                            <li class="flex items-center text-base mt-2">
+                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
+                                </svg>
+                                300 kms per Day
+                            </li>
+                            <li class="flex items-center text-base mt-2">
+                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
+                                </svg>
+                                300 rs Driver Allowance
+                            </li>
+                            <li class="flex items-center text-base mt-2">
+                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
+                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
+                                </svg>
+                                Toll Tax and Parking Extra
+                            </li>
+                        </ul>
+                        <a href="#" class="flex justify-end">
+                            <button class="mt-6 select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20" type="button">
+                                Book Now
+                            </button>
+                        </a>
+                    </div>
+                <?php } ?>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <section class="relative py-28 bg-gray-900">
     <div class="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
@@ -107,8 +212,8 @@ require_once "_header.php"; ?>
                         <div class="flex-none w-12 h-12 bg-gray-700 text-red-400 rounded-lg flex items-center justify-center">
 
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                            <?php echo $feature['icon']; ?>
-                </svg>
+                                <?php echo $feature['icon']; ?>
+                            </svg>
                         </div>
                         <div>
                             <h4 class="text-lg text-gray-100 font-semibold">
@@ -127,6 +232,30 @@ require_once "_header.php"; ?>
     </div>
     <div class="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]" style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
 </section>
+
+<section class="relative pb-8 bg-gray-900">
+    <div class="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
+        <div class="z-10">
+            <div class="max-w-6xl xl:mx-auto xl:text-center">
+                <h3 class="text-white text-2xl font-semibold sm:text-3xl">
+                    Mini luxury bus on rent in Ahmedabad
+                </h3>
+                <p class="mt-3 text-gray-300">
+                    If you are planning a tour of Gujarat, hiring a mini bus is the best way to get around. Not only is it an affordable option, but it also allows you to see the sights and sounds of the state at your own pace.
+                </p>
+                <p class="mt-3 text-gray-300">
+                    Gujarat Darshan is one of the most trusted tour and travel company in Ahmedabad. We offer best in class bus rental services for all types of occasions like local sightseeing, outstation trip, corporate events and wedding functions. We have a wide fleet of buses that includes Luxury, Volvo, Semi-Sleeper and Sleeper buses. All our buses are driven by experienced drivers and well-maintained to ensure a safe and comfortable journey.
+
+
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="absolute inset-0 max-w-md mx-auto h-80 blur-[118px] sm:h-72" style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
+    </div>
+</section>
+
+
 <script>
     document.addEventListener("alpine:init", () => {
         Alpine.data("dropdown", () => ({
