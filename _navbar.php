@@ -4,8 +4,6 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
 
 ?>
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 <div class="w-full text-gray-700 bg-white px-2">
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-2xl px-4 mx-auto border-0 rounded-full md:border-2  border-black my-4 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
@@ -22,7 +20,30 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
         <nav :class="{'flex': open, 'hidden': !open}" class="flex-col flex-grow pb-4 md:pb-0 hidden md:flex md:justify-end md:flex-row">
             <a class="<?php echo $linkClass; ?>" href="/gujarattravels/">Home</a>
             <div @click.away="open = false" class="relative" x-data="{ open: false }">
-            <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
+                    <span class="text-base font-bold">Rental Service</span>
+                    <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-5 h-5 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
+                        <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+                    </svg>
+                </button>
+                <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-60 z-50">
+                    <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
+                        <?php
+                        $menuItems = [
+                            'Tempo Traveller Hire' => '/gujarattravels/tour-packages/dwarka-tour-packages.php',
+                            'Luxury Bus Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
+                            'Car Hire' => '/gujarattravels/car-hire-in-ahmedabad.php',
+                        ];
+                        ?>
+
+                        <?php foreach ($menuItems as $text => $link) : ?>
+                            <a class="block <?php echo $dropdownLinkClass; ?>" href="<?php echo $link; ?>"><?php echo $text; ?></a>
+                        <?php endforeach; ?>
+                    </div>
+                </div>
+            </div>
+            <div @click.away="open = false" class="relative" x-data="{ open: false }">
+                <button @click="open = !open" class="flex flex-row items-center w-full px-4 py-2 mt-2 text-sm font-semibold text-left bg-transparent rounded-lg hover:text-gray-900 focus:text-gray-900 hover:bg-gray-200 focus:bg-gray-200 focus:outline-none focus:shadow-outline">
                     <span class="text-base font-bold">Tour Packages</span>
                     <svg fill="currentColor" viewBox="0 0 20 20" :class="{'rotate-180': open, 'rotate-0': !open}" class="inline w-5 h-5 mt-1 ml-1 transition-transform duration-200 transform md:-mt-1">
                         <path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path>
@@ -47,7 +68,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                         ];
                         ?>
 
-                        <?php foreach ($menuItems as $text => $link): ?>
+                        <?php foreach ($menuItems as $text => $link) : ?>
                             <a class="block <?php echo $dropdownLinkClass; ?>" href="<?php echo $link; ?>"><?php echo $text; ?></a>
                         <?php endforeach; ?>
                     </div>
@@ -96,7 +117,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                         ];
                         ?>
 
-                        <?php foreach ($hotels as $text => $link): ?>
+                        <?php foreach ($hotels as $text => $link) : ?>
                             <a class="block <?php echo $dropdownLinkClass; ?>" href="<?php echo $link; ?>"><?php echo $text; ?></a>
                         <?php endforeach; ?>
                     </div>
