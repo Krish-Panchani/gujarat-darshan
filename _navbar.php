@@ -30,7 +30,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
                         <?php
                         $menuItems = [
-                            'Tempo Traveller Hire' => '/gujarattravels/tour-packages/dwarka-tour-packages.php',
+                            'Tempo Traveller Hire' => '/gujarattravels/hire-tempo-traveller-ahmedabad.php',
                             'Luxury Bus Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
                             'Car Hire' => '/gujarattravels/car-hire-in-ahmedabad.php',
                         ];
