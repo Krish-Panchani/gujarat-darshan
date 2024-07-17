@@ -2,7 +2,7 @@
 <?php require_once "../_navbar.php"; ?>
 
 <?php
-$hotel_in = "Somnath";
+$hotel_in = "Statue of uinty";
 ?>
 <div class="relative" x-data="{ state: false }">
     <div class="absolute inset-0 blur-xl h-[580px]" style="
