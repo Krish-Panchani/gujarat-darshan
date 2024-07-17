@@ -112,8 +112,8 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                             'Hotels in Ahmedabad' => '/gujarattravels/Hotels/Hotels-in-Ahmedabad.php',
                             'Hotels in Gir' => '/gujarattravels/Hotels/Hotels-in-Gir.php',
                             'Hotels in Diu' => '/gujarattravels/Hotels/Hotels-in-Diu.php',
-                            'Hotels in Rajkot' => '/gujarattravels/Hotels/Hotels-in-Rajkot.php',
-                            'Hotels in Rann of Kutch' => '/gujarattravels/Hotels/Hotels-in-Rann-of-Kutch.php'
+                            'Hotels in SOU' => '/gujarattravels/Hotels/Hotels-in-SOU.php',
+                            // 'Hotels in Rann of Kutch' => '/gujarattravels/Hotels/Hotels-in-Rann-of-Kutch.php'
                         ];
                         ?>
 
