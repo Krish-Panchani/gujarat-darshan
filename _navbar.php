@@ -30,9 +30,11 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
                         <?php
                         $menuItems = [
+                            'Car Hire' => '/gujarattravels/car-hire-in-ahmedabad.php',
                             'Tempo Traveller Hire' => '/gujarattravels/hire-tempo-traveller-ahmedabad.php',
                             'Luxury Bus Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
-                            'Car Hire' => '/gujarattravels/car-hire-in-ahmedabad.php',
+                            'Premium Category' => '/gujarattravels/bus-hire-ahmedabad.php',
+                            'Urbania Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
                         ];
                         ?>
 
@@ -84,7 +86,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                 <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-72 z-50">
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
                         <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/2-Days-Statue-of-Unity-Tour.php">2 Days - Statue of Unity Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/2-Days-Dwarka-Somnath-Tour.php">2 Days - Dwarka Somnath Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/3-Days-Dwarka-Somnath-Tour.php">3 Days - Dwarka Somnath Tour</a>
                         <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/3-Days-Dwarka-Somnath-with-SOU.php">3 Days - Dwarka Somnath with SOU</a>
                         <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/4-Days-Dwarka-Somnath-Tour.php">4 Days - Dwarka Somnath Tour</a>
                         <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/4-Days-Saurashtra-Tour-with-Porbandar.php">4 Days - Saurashtra Tour with Porbandar</a>
@@ -107,9 +109,9 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow ">
                         <?php
                         $hotels = [
-                            'Hotels in Somnath' => '/gujarattravels/Hotels/Hotels-in-somnath',
-                            'Hotels in Dwarka' => '/gujarattravels/Hotels/Hotels-in-Dwarka.php',
                             'Hotels in Ahmedabad' => '/gujarattravels/Hotels/Hotels-in-Ahmedabad.php',
+                            'Hotels in Dwarka' => '/gujarattravels/Hotels/Hotels-in-Dwarka.php',
+                            'Hotels in Somnath' => '/gujarattravels/Hotels/Hotels-in-somnath',
                             'Hotels in Gir' => '/gujarattravels/Hotels/Hotels-in-Gir.php',
                             'Hotels in Diu' => '/gujarattravels/Hotels/Hotels-in-Diu.php',
                             'Hotels in SOU' => '/gujarattravels/Hotels/Hotels-in-SOU.php',
