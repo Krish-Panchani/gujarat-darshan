@@ -1,5 +1,27 @@
 <?php require_once "_header.php"; ?>
-<?php require_once "_navbar.php"; ?>
+<?php require_once "../_navbar.php"; ?>
+<?php require_once "../_db-conn.php"; ?>
+<?php
+if (isset($_GET['id'])) {
+  $id = $_GET['id'];
+  
+
+  $sql = "SELECT * FROM tour_packages_gd WHERE id = $id";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
+    $tour = $result->fetch_assoc();
+    
+    $tour_name = $tour['tour_name'];
+    $tour_price = $tour['tour_price'];
+    $tour_duration = $tour['tour_duration'];
+    $starting_point = $tour['starting_point'];
+    $destination = $tour['destinations'];
+    $tour_overview = $tour['tour_overview'];
+  }
+}
+
+
+?>
 <section
   class="tour-details-section mt-10 flex flex-col md:flex-row text-left w-[90%] m-auto gap-3 md:gap-0"
 >
