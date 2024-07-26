@@ -22,9 +22,14 @@ if (isset($_GET['id'])) {
 
 
 ?>
+<h1 class="felx justify-center text-4xl text-gray-800 font-extrabold sm:text-5xl">
+                        Explore <span class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-transparent">Car </span>
+                        In Ahmedabad
+                    </h1>
 <section
   class="tour-details-section mt-10 flex flex-col md:flex-row text-left w-[90%] m-auto gap-3 md:gap-0"
 >
+
   <section
     class="tour_details flex flex-col w-full md:w-[70%] bg-slate-100 p-3 h-auto gap-4"
   >
@@ -32,7 +37,7 @@ if (isset($_GET['id'])) {
       <div class="tour-overview-header flex justify-between p-2 w-full">
         <div class="icon flex gap-2 items-center font-semibold">
           <i class="fa-solid fa-map"></i>
-          <h3>Tour overview</h3>
+          <h3 class="text-xl font-semibold">Tour overview</h3>
         </div>
         <div class="flex gap-2 items-center">
           <h3 class="uppercase text-[#be000b] font-semibold">Expand all</h3>
@@ -41,9 +46,7 @@ if (isset($_GET['id'])) {
       </div>
       <div class="tour-overview-desc p-2">
         <p class="text-sm">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-          voluptatibus ducimus reprehenderit voluptates ipsa doloremque nisi
-          consectetur deleniti commodi. Incidunt laboriosam inventore ut?
+          <?php echo $tour_overview; ?>
         </p>
       </div>
     </div>
@@ -51,7 +54,7 @@ if (isset($_GET['id'])) {
       <div class="tour-gallery-header px-2 py-4 w-full">
         <div class="icon flex gap-2 items-center font-semibold">
           <i class="fa-solid fa-map"></i>
-          <h3>Trip itinerary</h3>
+          <h3 class="text-xl font-bold">Trip Itinerary</h3>
         </div>
       </div>
       <div class="tour-gallery w-full flex flex-col md:flex-row gap-3">
@@ -71,7 +74,7 @@ if (isset($_GET['id'])) {
             </div>
             <div class="gallery-desc-content flex flex-col">
               <span class="font-semibold text-base">Tour Name</span>
-              <span class="text-xs">Dwarka Somnath Tour</span>
+              <span class="text-xs"><?php echo $tour_name; ?></span>
             </div>
           </div>
           <div class="gallery-desc-item py-3 md:py-1 w-1/2 flex gap-2">
@@ -79,8 +82,8 @@ if (isset($_GET['id'])) {
               <i class="fa-solid fa-flag text-sm"></i>
             </div>
             <div class="gallery-desc-content flex flex-col">
-              <span class="font-semibold text-base">Tour Name</span>
-              <span class="text-xs">Dwarka Somnath Tour</span>
+              <span class="font-semibold text-base">Tour Duration</span>
+              <span class="text-xs"><?php echo $tour_duration; ?></span>
             </div>
           </div>
           <div class="gallery-desc-item py-3 md:py-1 w-1/2 flex gap-2">
