@@ -4,8 +4,8 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
 
 ?>
 <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
-<div class="w-full text-gray-700 bg-white px-2">
-    <div x-data="{ open: false }" class="flex flex-col max-w-screen-2xl px-4 mx-auto border-0 rounded-full md:border-2  border-black my-4 md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
+<div class="sticky top-0 left-0 w-full text-gray-700 bg-white px-2 my-4 z-50">
+    <div x-data="{ open: false }" class="flex flex-col max-w-screen-2xl px-4 mx-auto border-0 rounded-full md:border-2  border-black md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
             <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg focus:outline-none focus:shadow-outline">
                 <img class="w-40" src="logo.png" alt="Logo">
@@ -126,8 +126,13 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                 </div>
             </div>
 
+            <a class="<?php echo $linkClass; ?>" href="/gujarattravels/blogs.php">Blogs</a>
             <a class="<?php echo $linkClass; ?>" href="/gujarattravels/about-us">About</a>
-            <a class="<?php echo $linkClass; ?>" href="/gujarattravels/contact-us">Contact</a>
+            <a href="/gujarattravels/contact-us" class="px-2 mt-2">
+                <button class="select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20" type="button">
+                    Contact Now
+                </button>
+            </a>
         </nav>
     </div>
 </div>
