@@ -7,6 +7,7 @@ module.exports = {
     "./Hotels/*.php",
     "./tour-packages/*.php",
     "./Regular-tour/*.php",
+    "./blogs/*.php",
     "./node_modules/flowbite/**/*.js",
   ],
   theme: {
