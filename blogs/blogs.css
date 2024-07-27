@@ -1,0 +1,107 @@
+/* .blog_header{
+    background-image: url('../images/home2.jpeg');
+    background-position: center;
+    background-size: cover;
+}     */
+    /* Global Article Styles */
+    article.single-post-dv {
+        max-width: 900px;
+        margin: 2rem auto;
+        padding: 1.5rem;
+        background: #ffffff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        font-family: 'Arial', sans-serif;
+    }
+    
+    /* Post Thumbnail */
+    article.single-post-dv .post-thumbnail img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    
+    /* Date Block */
+    article.single-post-dv .date_blk {
+        display: block;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #ff006f;
+        margin: 1rem 0;
+        text-align: right;
+    }
+    
+    /* Entry Content */
+    article.single-post-dv .entry-content {
+        line-height: 1.6;
+        color: #333333;
+    }
+    
+    /* Headings */
+    article.single-post-dv .entry-content h2,
+    article.single-post-dv .entry-content h3 {
+        color: #333333;
+        margin-top: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    
+    article.single-post-dv .entry-content h2 {
+        font-size: 1.8rem;
+        border-bottom: 2px solid #b30039;
+        padding-bottom: 0.3rem;
+        font-weight: bold;
+    }
+    
+    article.single-post-dv .entry-content h3 {
+        font-size: 1.4rem;
+        border-left: 4px solid #ff006f;
+        padding-left: 0.5rem;
+    }
+    
+    /* Paragraphs */
+    article.single-post-dv .entry-content p {
+        margin: 1rem 0;
+    }
+    
+    /* Lists */
+    article.single-post-dv .entry-content ul {
+        list-style: disc;
+        padding-left: 1.5rem;
+    }
+    
+    article.single-post-dv .entry-content ul li {
+        margin: 0.5rem 0;
+    }
+    
+    /* Links */
+    article.single-post-dv .entry-content a {
+        color: #009758;
+        text-decoration: none;
+        border-bottom: 1px solid black;
+        transition: color 0.3s ease, border-bottom 0.3s ease;
+    }
+    
+    article.single-post-dv .entry-content a:hover {
+        color: #b30039;
+        border-bottom: 1px solid black;
+    }
+    
+    /* Strong Text */
+    article.single-post-dv .entry-content strong {
+        font-weight: bold;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 600px) {
+        article.single-post-dv {
+            padding: 1rem;
+        }
+    
+        article.single-post-dv .entry-content h2 {
+            font-size: 1.6rem;
+        }
+    
+        article.single-post-dv .entry-content h3 {
+            font-size: 1.2rem;
+        }
+    }
