@@ -9,7 +9,7 @@ require_once "../_db-conn.php";
 $response = array();
 
 // Prepare the SQL query to fetch only the required fields
-$query = "SELECT date, img, title, slug FROM blogs_gd";
+$query = "SELECT date, img, title, slug FROM blogs_gd ORDER BY RAND() LIMIT 6";
 
 // Execute the query
 $result = mysqli_query($conn, $query);
