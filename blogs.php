@@ -19,31 +19,40 @@ require_once "_header.php"; ?>
 <section class="flex justify-evenly">
     <div id="blog-container" class="grid grid-cols-1 gap-6 sm:grid-cols-2 md:grid-cols-3">
         <!-- Skeleton Loader -->
-        <div class="relative flex flex-col mx-4 mt-6 text-gray-700 backdrop-blur-xl shadow-md bg-clip-border border-2 border-red-400 rounded-xl max-w-sm skeleton">
+        <div class="skeleton relative mx-4 mt-6 flex max-w-sm flex-col rounded-xl border-2 border-red-400 bg-clip-border text-gray-700 shadow-md backdrop-blur-xl">
             <div class="p-6">
+                <div>
+                    <p class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-right font-semibold text-transparent">Date</p>
+                </div>
                 <div class="grid h-40 w-72 flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700"></div>
-                <h3 class="text-xl font-bold text-gray-800 text-center mt-4 uppercase skeleton">Loading...</h3>
+                <h3 class="skeleton mt-4 text-center text-xl font-bold uppercase text-gray-800">Loading...</h3>
             </div>
-            <div class="p-6 pt-0 flex justify-between content-center items-center px-6">
-                <button class="font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none skeleton">Loading..</button>
+            <div class="flex content-center items-center justify-between p-6 px-6 pt-0">
+                <button class="skeleton mx-auto flex-1 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-3 text-center text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Loading..</button>
             </div>
         </div>
-        <div class="relative flex flex-col mx-4 mt-6 text-gray-700 backdrop-blur-xl shadow-md bg-clip-border border-2 border-red-400 rounded-xl max-w-sm skeleton">
+        <div class="skeleton relative mx-4 mt-6 flex max-w-sm flex-col rounded-xl border-2 border-red-400 bg-clip-border text-gray-700 shadow-md backdrop-blur-xl">
             <div class="p-6">
+                <div>
+                    <p class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-right font-semibold text-transparent">Date</p>
+                </div>
                 <div class="grid h-40 w-72 flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700"></div>
-                <h3 class="text-xl font-bold text-gray-800 text-center mt-4 uppercase skeleton">Loading...</h3>
+                <h3 class="skeleton mt-4 text-center text-xl font-bold uppercase text-gray-800">Loading...</h3>
             </div>
-            <div class="p-6 pt-0 flex justify-between content-center items-center px-6">
-                <button class="font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none skeleton">Loading..</button>
+            <div class="flex content-center items-center justify-between p-6 px-6 pt-0">
+                <button class="skeleton mx-auto flex-1 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-3 text-center text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Loading..</button>
             </div>
         </div>
-        <div class="relative flex flex-col mx-4 mt-6 text-gray-700 backdrop-blur-xl shadow-md bg-clip-border border-2 border-red-400 rounded-xl max-w-sm skeleton">
+        <div class="skeleton relative mx-4 mt-6 flex max-w-sm flex-col rounded-xl border-2 border-red-400 bg-clip-border text-gray-700 shadow-md backdrop-blur-xl">
             <div class="p-6">
+                <div>
+                    <p class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-right font-semibold text-transparent">Date</p>
+                </div>
                 <div class="grid h-40 w-72 flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700"></div>
-                <h3 class="text-xl font-bold text-gray-800 text-center mt-4 uppercase skeleton">Loading...</h3>
+                <h3 class="skeleton mt-4 text-center text-xl font-bold uppercase text-gray-800">Loading...</h3>
             </div>
-            <div class="p-6 pt-0 flex justify-between content-center items-center px-6">
-                <button class="font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none skeleton">Loading..</button>
+            <div class="flex content-center items-center justify-between p-6 px-6 pt-0">
+                <button class="skeleton mx-auto flex-1 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-3 text-center text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none">Loading..</button>
             </div>
         </div>
 
@@ -73,18 +82,21 @@ require_once "_header.php"; ?>
                     // Inject the actual blog data
                     data.data.forEach(blog => {
                         const blogHtml = `
-                            <div class="relative flex flex-col mx-4 mt-6 text-gray-700 backdrop-blur-xl shadow-md bg-clip-border border-2 border-red-400 rounded-xl max-w-sm">
-                                <div class="p-2">
+                            <div class="relative mx-4 mt-6 flex max-w-sm flex-col rounded-xl border-2 border-red-400 bg-clip-border text-gray-700 shadow-md backdrop-blur-xl">
+                                <div class="p-6">
+                                    <div>
+                                        <p class="bg-gradient-to-r from-amber-500 to-pink-500 bg-clip-text text-right font-semibold text-transparent">${blog.date}</p>
+                                    </div>
                                     <div class="grid w-full max-w-[28rem] flex-col items-end justify-center overflow-hidden rounded-xl bg-white bg-clip-border text-center text-gray-700">
                                         <img class="object-cover object-center" src="${blog.img}" alt="${blog.title}">
                                     </div>
-                                    <h3 class="text-xl font-bold text-gray-800 text-center mt-4 uppercase">${blog.title}</h3>
+                                    <h3 class="mt-4 text-center text-xl font-bold uppercase text-gray-800">${blog.title}</h3>
                                 </div>
-                                <div class="p-6 pt-2 px-6">
-                                    <button class="flex justify-end font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">
-                                        Read Now
-                                    </button>
+                                <div class="p-6 pt-0 flex justify-between content-center items-center px-6">
+                                <a href="/gujarattravels/blogs/${blog.slug}">
+                                    <button class="flex justify-end rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 px-6 py-3 text-center text-xs font-bold uppercase text-white shadow-md shadow-gray-900/10 transition-all hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none" type="button">Read Now</button>
                                 </div>
+                                </a>
                             </div>
                         `;
                         blogContainer.insertAdjacentHTML('beforeend', blogHtml);
@@ -98,6 +110,7 @@ require_once "_header.php"; ?>
             });
     });
 </script>
+
 
 </body>
 
