@@ -78,27 +78,12 @@ require_once "_header.php"; ?>
         "></div>
         </div>
         <div class="relative mt-12">
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 w-f">
+            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3 w-full">
                 <?php
                 $services = [
                     [
                         'image' => 'car-hire.png',
                         'title' => 'Maruti Swift Dzire',
-                        'tag' => '4+1 comfortable seating',
-                    ],
-                    [
-                        'image' => 'car-hire.png',
-                        'title' => 'Toyota Etios',
-                        'tag' => '4+1 comfortable seating',
-                    ],
-                    [
-                        'image' => 'car-hire.png',
-                        'title' => 'Hyundai Xcent',
-                        'tag' => '4+1 comfortable seating',
-                    ],
-                    [
-                        'image' => 'car-hire.png',
-                        'title' => 'Chevrolet Tavera',
                         'tag' => '4+1 comfortable seating',
                     ],
                     [
@@ -118,7 +103,7 @@ require_once "_header.php"; ?>
                     ],
                     [
                         'image' => 'car-hire.png',
-                        'title' => 'Mahindra Marazzo',
+                        'title' => 'Kia Carens',
                         'tag' => '6+1 comfortable seating',
                     ],
                 ];
@@ -160,7 +145,7 @@ require_once "_header.php"; ?>
                                 Toll Tax and Parking Extra
                             </li>
                         </ul>
-                        <a href="#" class="flex justify-end">
+                        <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank" class="flex justify-end">
                             <button class="mt-6 select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20" type="button">
                                 Book Now
                             </button>
