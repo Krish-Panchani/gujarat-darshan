@@ -3,7 +3,7 @@ $title = "Luxury Car Rental in Ahmedabad | Car Hire in Ahmedabad";
 $desc = "Gujarat Darshan provides Luxury Car Rental Services in Ahmedabad, enhancing comfort and joy for any occasion. Book your car hire now for a memorable experience!";
 require_once "_header.php"; ?>
 <?php require_once "_navbar.php"; ?>
-
+<?php require_once "_whatsapp_btn.php"; ?>
 
 <div class="relative" x-data="{ state: false }">
     <div class="absolute inset-0 blur-xl h-[580px]" style="
@@ -44,7 +44,7 @@ require_once "_header.php"; ?>
                                 <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
                             </svg>
                         </a>
-                        <a href="javascript:void(0)" class="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
+                        <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank" class="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
                             Contact Us Now
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                                 <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
@@ -82,27 +82,27 @@ require_once "_header.php"; ?>
                 <?php
                 $services = [
                     [
-                        'image' => 'car-hire.png',
+                        'image' => 'swift-dzire-gujarat-darshan.png',
                         'title' => 'Maruti Swift Dzire',
                         'tag' => '4+1 comfortable seating',
                     ],
                     [
-                        'image' => 'car-hire.png',
+                        'image' => 'artiga-gujarat-darshand.png',
                         'title' => 'Maruti Ertiga',
                         'tag' => '6+1 comfortable seating',
                     ],
                     [
-                        'image' => 'car-hire.png',
+                        'image' => 'toyota-innova-crysta-gujarat-darshan.png',
                         'title' => 'Toyota Crysta',
                         'tag' => '6+1 comfortable seating',
                     ],
                     [
-                        'image' => 'car-hire.png',
+                        'image' => 'toyota-innova-gujarat-darshan.png',
                         'title' => 'Toyota Innova',
                         'tag' => '6+1 comfortable seating',
                     ],
                     [
-                        'image' => 'car-hire.png',
+                        'image' => 'kia-carens-gujarat-darshan.png',
                         'title' => 'Kia Carens',
                         'tag' => '6+1 comfortable seating',
                     ],
@@ -160,7 +160,7 @@ require_once "_header.php"; ?>
 <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">
         <h3 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-        Our Fleet Is Always Ready For You
+            Our Fleet Is Always Ready For You
         </h3>
 
         <div class="flex justify-center mx-auto mt-6">
@@ -172,10 +172,10 @@ require_once "_header.php"; ?>
         <div class="flex items-start max-w-6xl mx-auto mt-16">
             <div class="flex flex-col">
                 <p class="text-center text-gray-500 lg:mx-8">
-                Our fleet of vehicles is well-kept and has all modern amenities to give you a relaxed travel experience. We have a variety of cars available on rent, whether you need a car for work or tourist purposes. Our skilled drivers make sure you get there on time and in style.
+                    Our fleet of vehicles is well-kept and has all modern amenities to give you a relaxed travel experience. We have a variety of cars available on rent, whether you need a car for work or tourist purposes. Our skilled drivers make sure you get there on time and in style.
                 </p>
                 <p class="text-center text-gray-500 lg:mx-8">
-                Travel in Ahmedabad without fuss by booking your <strong>car rental in Ahmedabad</strong> with Gujarat Darshan right away.
+                    Travel in Ahmedabad without fuss by booking your <strong>car rental in Ahmedabad</strong> with Gujarat Darshan right away.
                 </p>
 
                 <!-- <div class="flex flex-col items-center justify-center mt-8">
@@ -258,15 +258,15 @@ require_once "_header.php"; ?>
         <div class="z-10">
             <div class="max-w-6xl xl:mx-auto xl:text-center">
                 <h3 class="text-white text-2xl font-semibold sm:text-3xl">
-                Let Us Give You the Most Comfortable Trip in Gujarat
+                    Let Us Give You the Most Comfortable Trip in Gujarat
                 </h3>
                 <p class="mt-3 text-gray-300">
-                Whether you’re travelling within Ahmedabad or visiting Modhera Sun Temple or having a fun time at the lovely beaches of Kutch, our services for <strong>Car Hire in Ahmedabad</strong> provide a variety of vehicle options.
+                    Whether you’re travelling within Ahmedabad or visiting Modhera Sun Temple or having a fun time at the lovely beaches of Kutch, our services for <strong>Car Hire in Ahmedabad</strong> provide a variety of vehicle options.
                 </p>
                 <p class="mt-3 text-gray-300">
-                From bustling cities to breath-taking natural settings, this charming state has something to please everyone and Gujarat Darshan’s car rental services is a great way to make the most of your time because there are so many things to see and do in Gujarat.
+                    From bustling cities to breath-taking natural settings, this charming state has something to please everyone and Gujarat Darshan’s car rental services is a great way to make the most of your time because there are so many things to see and do in Gujarat.
                 </p>
-                
+
             </div>
         </div>
     </div>
