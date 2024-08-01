@@ -1,6 +1,3 @@
-<?php require_once "_header.php"; ?>
-<?php require_once "../_navbar.php"; ?>
-<?php require_once "../_whatsapp_btn.php"; ?>
 <?php require_once "../_db-conn.php"; ?>
 <?php
 if (isset($_GET['id'])) {
@@ -22,11 +19,16 @@ if (isset($_GET['id'])) {
     $tour_itinerary = $tour['tour_itinerary'];
     $tour_itinerary_array = json_decode($tour_itinerary, true);
     $meals = $tour['meals'];
+    $title = $tour['title'];
+    $desc = $tour['description'];
   }
 }
 
 
 ?>
+<?php require_once "_header.php"; ?>
+<?php require_once "../_navbar.php"; ?>
+<?php require_once "../_whatsapp_btn.php"; ?>
 <div class="relative" x-data="{ state: false }">
   <div class="absolute inset-0 blur-xl h-[580px]" style="
       background: linear-gradient(

@@ -1,4 +1,7 @@
-<?php require_once "_header.php"; ?>
+<?php 
+$title = "Run Of Kutch Tour Packages | Gujarat Darshan";
+$desc = "Explore the stunning landscapes and vibrant culture of the Kutch region with our exclusive tour packages. Book now for an unforgettable adventure.";
+require_once "_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 
 

@@ -1,4 +1,7 @@
-<?php require_once "_header.php"; ?>
+<?php
+$title = "Dwarka Tour Packages | Gujarat Darshan";
+$desc = "Discover the sacred city of Dwarka with our exclusive tour packages. Visit temples, beaches, and immerse yourself in the spiritual essence of Gujarat.";  
+require_once "_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 
 

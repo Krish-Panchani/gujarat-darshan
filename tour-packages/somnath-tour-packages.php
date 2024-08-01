@@ -1,4 +1,7 @@
-<?php require_once "_header.php"; ?>
+<?php
+$title = "Somnath Tour Packages | Gujarat Darshan";
+$desc = "Visit the sacred town of Somnath with our specially curated tour packages. Explore the iconic Somnath Temple and other spiritual landmarks."; 
+require_once "_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 
 
