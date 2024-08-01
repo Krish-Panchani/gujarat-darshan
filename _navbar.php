@@ -34,7 +34,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                             'Tempo Traveller Hire' => '/gujarattravels/hire-tempo-traveller-ahmedabad.php',
                             'Luxury Bus Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
                             'Premium Category' => '/gujarattravels/bus-hire-ahmedabad.php',
-                            'Urbania Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
+                            'Urbania Hire' => '/gujarattravels/urbania-hire-ahmedabad.php',
                         ];
                         ?>
 
