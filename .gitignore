@@ -1,1 +1,7 @@
 /node_modules
+
+_db-conn.php
+
+/blogs/1.php
+/blogs/blog.php
+/blogs/debug.php

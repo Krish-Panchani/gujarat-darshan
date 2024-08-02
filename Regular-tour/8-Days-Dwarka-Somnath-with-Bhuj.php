@@ -1,4 +1,4 @@
-<?php require_once "_header.php"; ?>
+<?php require_once "../_header.php"; ?>
 <?php require_once "../_db-conn.php"; ?>
 <?php
 $package_name = 'Colours of Gujarat Tour';

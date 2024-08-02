@@ -2,7 +2,7 @@
 
 $title = "Statue of Unity Tour Packages | Gujarat Darshan";
 $desc = "Experience the world's tallest statue, the Statue of Unity, with our comprehensive tour. Learn about its significance and explore the surrounding attractions."; 
-require_once "_header.php"; ?>
+require_once "../_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 
 
