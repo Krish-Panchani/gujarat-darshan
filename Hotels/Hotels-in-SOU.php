@@ -1,4 +1,7 @@
-<?php require_once "../_header.php"; ?>
+<?php 
+$title = "Hotel near Statue of Unity | Gujarat Darshan";
+$desc = "Discover the best hotels near the Statue of Unity for a comfortable stay. Experience the monumental attraction with ease and convenience.";
+require_once "../_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 
 <?php
@@ -117,9 +120,11 @@ $hotel_in = "Statue of uinty";
                                         <strong class="font-semibold items-center">Ratings on Google</strong>
                                         )
                                     </p>
+                                    <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">
                                     <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">
                                         Book Now
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         `;

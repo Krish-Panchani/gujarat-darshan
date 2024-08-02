@@ -1,4 +1,7 @@
-<?php require_once "../_header.php"; ?>
+<?php 
+$title = "Hotel in Ahmedabad | Gujarat Darshan";
+$desc = "Find the best hotels in Ahmedabad for a comfortable and luxurious stay. Enjoy top amenities and convenient locations. Book your room today.";
+require_once "../_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 
 <?php
@@ -117,9 +120,11 @@ $hotel_in = "Ahmedabad";
                                         <strong class="font-semibold items-center">Ratings on Google</strong>
                                         )
                                     </p>
+                                    <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">
                                     <button class="align-middle select-none font-sans font-bold text-center uppercase transition-all disabled:opacity-50 disabled:shadow-none disabled:pointer-events-none text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20 focus:opacity-[0.85] focus:shadow-none active:opacity-[0.85] active:shadow-none" type="button">
                                         Book Now
                                     </button>
+                                    </a>
                                 </div>
                             </div>
                         `;
