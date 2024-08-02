@@ -43,7 +43,7 @@ if ($result) {
     </div>
 </section>
 <hr>
-<div class="flex flex-col md:flex-row justify-evenly items-center md:items-start">
+<div class="flex flex-col md:flex-row justify-evenly content-center items-start">
     <div class="flex flex-col mt-12 bg-white border sm:justify-center border-gray-700 rounded-2xl">
         <?php echo htmlspecialchars($article); ?>
     </div>
