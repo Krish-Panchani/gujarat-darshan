@@ -1,3 +1,15 @@
+<?php
+$defaultTitle = "Best Tour Operator in Ahmedabad, Gujarat | Gujarat Darshan";
+$defaultDesc = "Looking for a reliable and affordable tour operator in Ahmedabad? Look no further than Gujarat Darshan! We offer a wide range of tour packages that are perfect for both leisure and business travelers.";
+
+// Get the current URL
+$currentUrl = "http://$_SERVER[HTTP_HOST]$_SERVER[REQUEST_URI]";
+
+$title = !empty($title) ? $title : $defaultTitle;
+$desc = !empty($desc) ? $desc : $defaultDesc;
+$canonical = !empty($canonical) ? $canonical : $currentUrl;
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -29,7 +41,8 @@
   <meta property="og:url" content="https://www.gujaratdarshans.com/">
   <meta property="og:type" content="website">
 
-
+  <link rel="icon" type="image/png" href="/gujarattravels/images/logo.png">
+  <link rel="canonical" href="<?php echo $canonical; ?>">
   <meta name="description" content="<?php echo $desc; ?>">
   <title><?php echo $title; ?></title>
 
