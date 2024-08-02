@@ -22,7 +22,7 @@
     <meta property="og:title" content="<?php echo $title;?>t">
     <meta property="og:description" content="<?php echo $desc;?>">
     <meta property="og:image" content="your-image-url.jpg">
-    <meta property="og:url" content="https://your-website-url.com">
+    <meta property="og:url" content="https://www.gujaratdarshans.com/">
     <meta property="og:type" content="website">
 
      

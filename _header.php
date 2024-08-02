@@ -18,7 +18,7 @@
     <meta property="og:title" content="Best Tour Operator in Ahmedabad, Gujarat">
     <meta property="og:description" content="Looking for a reliable and affordable tour operator in Ahmedabad? Look no further than Gujarat Darshan! We offer a wide range of tour packages that are perfect for both leisure and business travelers.">
     <meta property="og:image" content="your-image-url.jpg">
-    <meta property="og:url" content="https://your-website-url.com">
+    <meta property="og:url" content="https://www.gujaratdarshans.com/">
     <meta property="og:type" content="website">
 
     <link rel="stylesheet" href="css/output.css">
