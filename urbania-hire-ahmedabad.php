@@ -58,12 +58,13 @@ require_once "_header.php"; ?>
                                 <h2 class="text-2xl font-bold py-4">Brand new 17 Seater Urbania Ahmedabad</h2>
 
                                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
-                                    <img src="https://via.placeholder.com/400" alt="Tempo Traveller 1" class="w-full h-auto">
-                                    <img src="https://via.placeholder.com/400" alt="Tempo Traveller 2" class="w-full h-auto">
-                                    <img src="https://via.placeholder.com/400" alt="Tempo Traveller 3" class="w-full h-auto">
-                                    <img src="https://via.placeholder.com/400" alt="Tempo Traveller 4" class="w-full h-auto">
-                                    <img src="https://via.placeholder.com/400" alt="Tempo Traveller 5" class="w-full h-auto">
-                                    <img src="https://via.placeholder.com/400" alt="Tempo Traveller 6" class="w-full h-auto">
+                                    <img src="images/urbania_img/urbania1.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                                    <img src="images/urbania_img/urbania2.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                                    <img src="images/urbania_img/urbania3.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                                    <img src="images/urbania_img/urbania4.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                                    <img src="images/urbania_img/urbania5.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                                    <img src="images/urbania_img/urbania6.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                                    <!-- <img src="https://via.placeholder.com/400" alt="Tempo Traveller 6" class="w-full h-auto"> -->
                                 </div>
                             </section>
 
