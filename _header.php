@@ -18,7 +18,7 @@ $canonical = !empty($canonical) ? $canonical : $currentUrl;
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Krish Panchani and Thunder Develops">
 
-  <link rel="stylesheet" href="/gujarattravels/css/output.css">
+  <link rel="stylesheet" href="/gujarattravels/css/output.css?v=1.0">
   <link rel="stylesheet" href="/gujarattravels/css/index.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
