@@ -8,7 +8,7 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
     <div x-data="{ open: false }" class="flex flex-col max-w-screen-2xl px-4 mx-auto border-0 rounded-full md:border-2  border-black md:items-center md:justify-between md:flex-row md:px-6 lg:px-8">
         <div class="p-4 flex flex-row items-center justify-between">
             <a href="#" class="text-lg font-semibold tracking-widest text-gray-900 uppercase rounded-lg focus:outline-none focus:shadow-outline">
-                <img class="w-40" src="logo.png" alt="Logo">
+                <img class="w-40" src="/gujarattravels/images/logo.png" alt="Logo">
             </a>
             <button class="md:hidden rounded-lg focus:outline-none focus:shadow-outline" @click="open = !open">
                 <svg fill="currentColor" viewBox="0 0 20 20" class="w-6 h-6">
@@ -30,11 +30,11 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
                         <?php
                         $menuItems = [
-                            'Car Hire' => '/gujarattravels/car-hire-in-ahmedabad.php',
-                            'Tempo Traveller Hire' => '/gujarattravels/hire-tempo-traveller-ahmedabad.php',
-                            'Luxury Bus Hire' => '/gujarattravels/bus-hire-ahmedabad.php',
-                            'Premium Category' => '/gujarattravels/bus-hire-ahmedabad.php',
-                            'Urbania Hire' => '/gujarattravels/urbania-hire-ahmedabad.php',
+                            'Car Hire' => '/gujarattravels/car-hire-in-ahmedabad',
+                            'Tempo Traveller Hire' => '/gujarattravels/hire-tempo-traveller-ahmedabad',
+                            'Luxury Bus Hire' => '/gujarattravels/bus-hire-ahmedabad',
+                            'Premium Category' => '/gujarattravels/bus-hire-ahmedabad',
+                            'Urbania Hire' => '/gujarattravels/urbania-hire-ahmedabad',
                         ];
                         ?>
 
@@ -55,18 +55,17 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
                         <?php
                         $menuItems = [
-                            'Rann of kutch package' => '/gujarattravels/tour-packages/rann-of-kutch-package.php',
-                            'Dwarka tour packages' => '/gujarattravels/tour-packages/dwarka-tour-packages.php',
-                            'Somnath tour packages' => '/gujarattravels/tour-packages/somnath-tour-packages.php',
-                            'Dwarka somnath tour' => '/gujarattravels/tour-packages/dwarka-somnath-tour.php',
-                            'Pancha dwarka yatra' => '/gujarattravels/tour-packages/pancha-dwarka-yatra.php',
-                            'Statue of unity tour' => '/gujarattravels/tour-packages/statue-of-unity-tour.php',
-                            'Saurashtra tour ahmedabad' => '/gujarattravels/tour-packages/saurashtra-tour-ahmedabad.php',
-                            'Gir jungle safari' => '/gujarattravels/tour-packages/gir-jungle-safari.php',
-                            'Gujarat diu tour' => '/gujarattravels/tour-packages/gujarat-diu-tour.php',
-                            'Best of kutch tour' => '/gujarattravels/tour-packages/best-of-kutch-tour.php',
-                            'Colours of gujarat tour' => '/gujarattravels/tour-packages/colours-of-gujarat-tour.php',
-                            'Gujarat desert beach tour' => '/gujarattravels/tour-packages/gujarat-desert-beach-tour.php'
+                            'Rann of kutch package' => '/gujarattravels/tour-packages/rann-of-kutch-package',
+                            'Dwarka tour packages' => '/gujarattravels/tour-packages/dwarka-tour-packages',
+                            'Somnath tour packages' => '/gujarattravels/tour-packages/somnath-tour-packages',
+                            'Dwarka somnath tour' => '/gujarattravels/tour-packages/dwarka-somnath-tour',
+                            'Pancha dwarka yatra' => '/gujarattravels/tour-packages/pancha-dwarka-yatra',
+                            'Statue of unity tour' => '/gujarattravels/tour-packages/statue-of-unity-tour',
+                            'Saurashtra tour ahmedabad' => '/gujarattravels/tour-packages/saurashtra-tour-ahmedabad',
+                            'Gir jungle safari' => '/gujarattravels/tour-packages/gir-jungle-safari',
+                            'Gujarat diu tour' => '/gujarattravels/tour-packages/gujarat-diu-tour',
+                            'Best of kutch tour' => '/gujarattravels/tour-packages/best-of-kutch-tour',
+                            'Colours of gujarat tour' => '/gujarattravels/tour-packages/colours-of-gujarat-tour',
                         ];
                         ?>
 
@@ -85,16 +84,16 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                 </button>
                 <div x-show="open" x-transition:enter="transition ease-out duration-100" x-transition:enter-start="transform opacity-0 scale-95" x-transition:enter-end="transform opacity-100 scale-100" x-transition:leave="transition ease-in duration-75" x-transition:leave-start="transform opacity-100 scale-100" x-transition:leave-end="transform opacity-0 scale-95" class="absolute right-0 w-full mt-2 origin-top-right rounded-md shadow-lg md:w-72 z-50">
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/2-Days-Statue-of-Unity-Tour.php">2 Days - Statue of Unity Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/3-Days-Dwarka-Somnath-Tour.php">3 Days - Dwarka Somnath Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/3-Days-Dwarka-Somnath-with-SOU.php">3 Days - Dwarka Somnath with SOU</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/4-Days-Dwarka-Somnath-Tour.php">4 Days - Dwarka Somnath Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/4-Days-Saurashtra-Tour-with-Porbandar.php">4 Days - Saurashtra Tour with Porbandar</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/5-Days-Dwarka-Somnath-Diu-&-Gir-Tour.php">5 Days - Dwarka Somnath Diu & Gir Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/6-Days-Dwarka-Somnath-Diu-&-Gir-Tour.php">6 Days - Dwarka Somnath Diu & Gir Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/7-Days-Dwarka-Somnath-Diu-&-Gir-Tour.php">7 Days - Dwarka Somnath Diu & Gir Tour</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/8-Days-Dwarka-Somnath-with-Bhuj.php">8 Days - Dwarka Somnath with Bhuj</a>
-                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/9-Days-Saurashtra-with-SOU-&-Kutch.php">9 Days - Saurashtra with SOU & Kutch</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/2-Days-Statue-of-Unity-Tour">2 Days - Statue of Unity Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/3-Days-Dwarka-Somnath-Tour">3 Days - Dwarka Somnath Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/3-Days-Dwarka-Somnath-with-SOU">3 Days - Dwarka Somnath with SOU</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/4-Days-Dwarka-Somnath-Tour">4 Days - Dwarka Somnath Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/4-Days-Saurashtra-Tour-with-Porbandar">4 Days - Saurashtra Tour with Porbandar</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/5-Days-Dwarka-Somnath-Diu-&-Gir-Tour">5 Days - Dwarka Somnath Diu & Gir Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/6-Days-Dwarka-Somnath-Diu-&-Gir-Tour">6 Days - Dwarka Somnath Diu & Gir Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/7-Days-Dwarka-Somnath-Diu-&-Gir-Tour">7 Days - Dwarka Somnath Diu & Gir Tour</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/8-Days-Dwarka-Somnath-with-Bhuj">8 Days - Dwarka Somnath with Bhuj</a>
+                        <a class="block <?php echo $dropdownLinkClass; ?>" href="/gujarattravels/Regular-tour/9-Days-Saurashtra-with-SOU-&-Kutch">9 Days - Saurashtra with SOU & Kutch</a>
                     </div>
                 </div>
             </div>
@@ -109,13 +108,13 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                     <div class="z-50 px-2 py-2 bg-white rounded-md shadow ">
                         <?php
                         $hotels = [
-                            'Hotels in Ahmedabad' => '/gujarattravels/Hotels/Hotels-in-Ahmedabad.php',
-                            'Hotels in Dwarka' => '/gujarattravels/Hotels/Hotels-in-Dwarka.php',
+                            'Hotels in Ahmedabad' => '/gujarattravels/Hotels/Hotels-in-Ahmedabad',
+                            'Hotels in Dwarka' => '/gujarattravels/Hotels/Hotels-in-Dwarka',
                             'Hotels in Somnath' => '/gujarattravels/Hotels/Hotels-in-somnath',
-                            'Hotels in Gir' => '/gujarattravels/Hotels/Hotels-in-Gir.php',
-                            'Hotels in Diu' => '/gujarattravels/Hotels/Hotels-in-Diu.php',
-                            'Hotels in SOU' => '/gujarattravels/Hotels/Hotels-in-SOU.php',
-                            // 'Hotels in Rann of Kutch' => '/gujarattravels/Hotels/Hotels-in-Rann-of-Kutch.php'
+                            'Hotels in Gir' => '/gujarattravels/Hotels/Hotels-in-Gir',
+                            'Hotels in Diu' => '/gujarattravels/Hotels/Hotels-in-Diu',
+                            'Hotels in SOU' => '/gujarattravels/Hotels/Hotels-in-SOU',
+                            // 'Hotels in Rann of Kutch' => '/gujarattravels/Hotels/Hotels-in-Rann-of-Kutch'
                         ];
                         ?>
 
