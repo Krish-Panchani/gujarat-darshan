@@ -57,7 +57,7 @@ require_once "_header.php"; ?>
                                             <div class="justify-between sm:flex">
                                                 <div class="flex-1">
                                                     <h3 class="text-xl font-bold text-green-700"><?php echo $tour_name; ?></h3>
-                                                    <p class="text-gray-500 mt-2 pr-2"> <?php echo $tour_overview; ?></p>
+                                                    <p class="text-gray-500 mt-2 pr-2 line-clamp-3"> <?php echo $tour_overview; ?></p>
                                                     <p class="text-gray-500 mt-2 pr-2 flex items-center">
                                                         <svg class="w-5 h-5 font-semibold mr-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                             <path stroke="none" d="M0 0h24v24H0z" />
@@ -88,29 +88,31 @@ require_once "_header.php"; ?>
                                                         <span class="text-gray-500 font-semibold text-sm">Per Person</span>
                                                     </span>
                                                     <a href="view-more.php?id=<?php echo $tour_id ?>">
-                                                    <button class="flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-80">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                                                            <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                                            <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
-                                                        </svg>
+                                                        <div class="flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-600 rounded-lg hover:bg-blue-500 w-full">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                                                <path fill-rule="evenodd" d="M13.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 0 1-1.06-1.06L11.69 12 4.72 5.03a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                                <path fill-rule="evenodd" d="M19.28 11.47a.75.75 0 0 1 0 1.06l-7.5 7.5a.75.75 0 1 1-1.06-1.06L17.69 12l-6.97-6.97a.75.75 0 0 1 1.06-1.06l7.5 7.5Z" clip-rule="evenodd" />
+                                                            </svg>
 
 
-                                                        <span class="mx-1">View More</span>
-                                                    </button>
+                                                            <span class="mx-1 whitespace-nowrap">View More</span>
+                                                        </div>
                                                     </a>
-                                                    <button class="flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-500 rounded-lg hover:bg-red-700">
-                                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
-                                                            <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
-                                                        </svg>
+                                                    <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">
+                                                        <div class="flex items-center px-2 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-red-500 rounded-lg hover:bg-red-700">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" class="size-4">
+                                                                <path fill-rule="evenodd" d="M1.5 4.5a3 3 0 0 1 3-3h1.372c.86 0 1.61.586 1.819 1.42l1.105 4.423a1.875 1.875 0 0 1-.694 1.955l-1.293.97c-.135.101-.164.249-.126.352a11.285 11.285 0 0 0 6.697 6.697c.103.038.25.009.352-.126l.97-1.293a1.875 1.875 0 0 1 1.955-.694l4.423 1.105c.834.209 1.42.959 1.42 1.82V19.5a3 3 0 0 1-3 3h-2.25C8.552 22.5 1.5 15.448 1.5 6.75V4.5Z" clip-rule="evenodd" />
+                                                            </svg>
 
 
-                                                        <span class="mx-1">Enquiry Now</span>
-                                                    </button>
+                                                            <span class="mx-1 whitespace-nowrap">Enquiry Now</span>
+                                                        </div>
+                                                    </a>
                                                 </div>
                                             </div>
-                                            <div class="mt-4 items-center space-y-4 text-sm sm:flex sm:space-x-4 sm:space-y-0">
+                                            <div class="flex justify-evenly mt-4 items-center space-y-4 text-sm sm:space-x-4 sm:space-y-0">
                                                 <span class="flex items-center text-gray-500">
-                                                    <svg class="size-5 mr-2" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                                    <svg class="size-5 mr-2" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
                                                         <path stroke="none" d="M0 0h24v24H0z" />
                                                         <circle cx="7" cy="17" r="2" />
                                                         <circle cx="17" cy="17" r="2" />
