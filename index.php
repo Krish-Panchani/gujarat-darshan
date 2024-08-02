@@ -1,4 +1,8 @@
-<?php require_once "_header.php"; ?>
+<?php
+$title = "Best Tour Operator in Ahmedabad, Gujarat | Gujarat Darshan";
+$desc = "Looking for a reliable and affordable tour operator in Ahmedabad? Look no further than Gujarat Darshan! We offer a wide range of tour packages that are perfect for both leisure and business travelers.";
+require_once "_header.php"; ?>
+
 <?php require_once "_navbar.php"; ?>
 <?php require_once "_whatsapp_btn.php"; ?>
 
