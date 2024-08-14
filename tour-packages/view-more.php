@@ -26,7 +26,7 @@ if (isset($_GET['id'])) {
 
 
 ?>
-<?php require_once "_header.php"; ?>
+<?php require_once "../_header.php"; ?>
 <?php require_once "../_navbar.php"; ?>
 <?php require_once "../_whatsapp_btn.php"; ?>
 <div class="relative" x-data="{ state: false }">
