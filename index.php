@@ -73,7 +73,7 @@ require_once "_header.php"; ?>
         <?php
         $services = [
           [
-            'image' => 'car-hire.png',
+            'image' => 'toyota-innova-crysta-gujarat-darshan.png',
             'title' => 'Hire Car',
             'description' => 'We have a wide range of cars to suit your needs and budget. Just tell us what you need and we’ll provide it for you.',
             'url' => 'car-hire-in-ahmedabad.php'
