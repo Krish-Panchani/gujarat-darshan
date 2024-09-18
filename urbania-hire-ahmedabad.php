@@ -40,7 +40,7 @@ require_once "_header.php"; ?>
                             Looking to hire a spacious and comfortable vehicle for your group travel needs in Ahmedabad? Look no further! Our 17 Seater Urbania offers the perfect solution for transporting large groups with ease and style. Whether it's a family outing, corporate event, or a city tour, enjoy a smooth and luxurious ride with our top-notch service. <strong>Book your 17 Seater Urbania in Ahmedabad</strong> today and experience hassle-free travel like never before!
                         </p>
                         <div class="flex items-center gap-x-3 text-sm sm:text-xs">
-                            <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank" class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
+                            <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank" class="flex items-center justify-center gap-x-1 py-2 px-4 text-white font-medium bg-gray-800 duration-150 hover:bg-gray-700 active:bg-gray-900 rounded-full md:inline-flex">
                                 Book Now
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                                     <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
@@ -167,23 +167,23 @@ require_once "_header.php"; ?>
                             <aside class="flex flex-col px-4 py-4 gap-6 mb-8 w-56 bg-gray-200 rounded-xl">
                                 <h2 class="text-xl font-bold">Our Fleet</h2>
                                 <ul class="pl-3 ">
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">11, 14, 17, 20 Seater Tempo Traveller</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Toyota Innova</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Toyota Etios</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Toyota Yaris</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Toyota Corolla</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">20, 29, 41, 56 Seater Bus</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Tata Indica</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">11, 14, 17, 20 Seater Tempo Traveller</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Toyota Innova</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Toyota Etios</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Toyota Yaris</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Toyota Corolla</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">20, 29, 41, 56 Seater Bus</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Tata Indica</a></li>
                                 </ul>
 
                                 <h2 class="text-xl font-bold">Featured Services</h2>
                                 <ul class="pl-3">
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Airport Taxi Transfer</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Railway Station Pick and Drop</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Gujarat Wildlife Tour</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Somnath – Dwarka</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Kutch Darshan</a></li>
-                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">Kutch – Full Moon</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Airport Taxi Transfer</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Railway Station Pick and Drop</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Gujarat Wildlife Tour</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Somnath – Dwarka</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Kutch Darshan</a></li>
+                                    <li class="hover:text-red-500 hover:font-semibold"><a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">Kutch – Full Moon</a></li>
                                 </ul>
                                 </ul>
                             </aside>
@@ -192,7 +192,7 @@ require_once "_header.php"; ?>
                                     <h2 class="text-2xl font-bold">Want To Hire? We Are Here</h2>
                                     <p><strong>gujaratdarshans.com</strong></p>
                                     <p><strong>+91 95589 55867</strong></p>
-                                    <a href="https://api.whatsapp.com/send/?phone=919558955867">
+                                    <a href="https://api.whatsapp.com/send/?phone=919512646767">
                                         <button class="px-4 py-2 bg-white text-red-500 font-bold rounded mt-4">HIRE A CAR NOW</button>
                                     </a>
                                 </div>

@@ -266,7 +266,7 @@ if ($result->num_rows > 0) {
                     <h2 class="text-2xl font-bold">Want customized Tour Package?</h2>
                     <p><strong>Call / Whatsapp now on</strong></p>
                     <p><strong>+91 95589 55867</strong></p>
-                    <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">
+                    <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">
                         <button class="px-4 py-2 bg-white text-red-500 font-bold rounded mt-4">GET Customized Tour Package Now</button>
                     </a>
                 </div>
@@ -281,7 +281,7 @@ if ($result->num_rows > 0) {
                     <li class="hover:text-red-500 hover:font-semibold"><i class="fa-solid fa-check"></i> No booking Amount</li>
                     <li class="hover:text-red-500 hover:font-semibold"><i class="fa-solid fa-check"></i> hidden Charges</li>
                 </ul>
-                <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">
+                <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">
                     <button class="px-4 py-2 bg-white text-red-500 font-bold rounded mt-4">Book you Trip Now</button>
                 </a>
             </aside>
@@ -290,7 +290,7 @@ if ($result->num_rows > 0) {
                     <h2 class="text-2xl font-bold">Want To Hire? We Are Here</h2>
                     <p><strong>gujaratdarshans.com</strong></p>
                     <p><strong>+91 95589 55867</strong></p>
-                    <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank">
+                    <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank">
                         <button class="px-4 py-2 bg-white text-red-500 font-bold rounded mt-4">HIRE A CAR NOW</button>
                     </a>
                 </div>

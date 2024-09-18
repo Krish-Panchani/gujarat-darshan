@@ -44,7 +44,7 @@ require_once "_header.php"; ?>
                                 <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
                             </svg>
                         </a>
-                        <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank" class="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
+                        <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank" class="flex items-center justify-center gap-x-1 py-2 px-4 text-gray-700 hover:text-gray-900 font-medium duration-150 md:inline-flex">
                             Contact Us Now
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
                                 <path fillRule="evenodd" d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z" clipRule="evenodd" />
@@ -145,7 +145,7 @@ require_once "_header.php"; ?>
                                 Toll Tax and Parking Extra
                             </li>
                         </ul>
-                        <a href="https://api.whatsapp.com/send/?phone=919558955867" target="_blank" class="flex justify-end">
+                        <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank" class="flex justify-end">
                             <button class="mt-6 select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20" type="button">
                                 Book Now
                             </button>
