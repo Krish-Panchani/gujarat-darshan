@@ -17,7 +17,7 @@ require_once "_header.php"; ?>
             <a href="/contact-us">
               <button class="px-6 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-gradient-to-r from-rose-400 to-red-500 rounded-lg hover:bg-red-400 mt-8">Explore Now</button>
             </a>
-            <button class="openModalBtn px-6 py-2 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-800 transition">
+            <button class="openModalBtn px-6 py-2 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-800 transition mt-8">
               Inquire Now
             </button>
           </div>
