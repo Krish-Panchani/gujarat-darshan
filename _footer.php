@@ -1,13 +1,31 @@
 <footer class="bg-white">
-    <div class="mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
+    <div class="flex flex-col mx-auto w-full max-w-screen-xl p-4 py-6 lg:py-8">
         <div class="md:flex md:justify-between">
             <div class="mb-6 md:mb-0">
                 <a href="#" class="flex items-center">
-                    <img class="w-40" src="logo.png" alt="Logo">
+                    <img class="w-40" src="/images/logo.png" alt="Logo">
                 </a>
                 <p class="mt-4 max-w-sm">Looking for a reliable and affordable tour operator in Ahmedabad? Look no further than Gujarat Darshan!</p>
             </div>
             <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
+
+                <div>
+                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Rental Services</h2>
+                    <ul class="text-gray-500 font-medium">
+                        <li class="mb-4">
+                            <a href="/car-hire-in-ahmedabad" class="hover:underline">Car Hire</a>
+                        </li>
+                        <li class="mb-4">
+                            <a href="/hire-tempo-traveller-ahmedabad" class="hover:underline">Tempo Traveler Hire</a>
+                        </li>
+                        <li>
+                            <a href="/bus-hire-ahmedabad" class="hover:underline">Luxury Bus Hire</a>
+                        </li>
+                        <li>
+                            <a href="/urbania-hire-ahmedabad" class="hover:underline">Urbania Hire</a>
+                        </li>
+                    </ul>
+                </div>
                 <div>
                     <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Quick links</h2>
                     <ul class="text-gray-500 font-medium">
@@ -19,20 +37,6 @@
                         </li>
                         <li>
                             <a href="/contact-us" class="hover:underline">Car Hire</a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Services</h2>
-                    <ul class="text-gray-500 font-medium">
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline ">Tempo Hire</a>
-                        </li>
-                        <li class="mb-4">
-                            <a href="#" class="hover:underline">Bus Hire</a>
-                        </li>
-                        <li>
-                            <a href="#" class="hover:underline">Car Hire</a>
                         </li>
                     </ul>
                 </div>
@@ -52,6 +56,29 @@
                 </ul>
             </div>
         </div>
+
+        <div class="grid grid-cols-2 gap-8 sm:gap-6 sm:grid-cols-2">
+        <div>
+            <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase">Tour Packages</h2>
+            <ul class="text-gray-500 font-medium">
+                <li class="mb-4">
+                    <a href="/tour-packages/rann-of-kutch-package" class="hover:underline">Rann of Kutch Package</a>
+                </li>
+                <li class="mb-4">
+                    <a href="/tour-packages/dwarka-tour-packages" class="hover:underline">Dwarka Tour Packages</a>
+                </li>
+                <li class="mb-4">
+                    <a href="/tour-packages/somnath-tour-packages" class="hover:underline">Somnath Tour Packages</a>
+                </li>
+                <li class="mb-4">
+                    <a href="/tour-packages/statue-of-unity-tour" class="hover:underline">Statue Of Unity Tour</a>
+                </li>
+                <li class="mb-4">
+                    <a href="/tour-packages/gir-jungle-safari" class="hover:underline">Gir jungle Safari</a>
+                </li>
+            </ul>
+        </div>
+    </div>
         <hr class="my-6 border-gray-200 sm:mx-auto lg:my-8" />
         <div class="sm:flex sm:items-center sm:justify-between">
             <span class="text-lg text-gray-500 sm:text-center">© <?php echo date("Y"); ?> <a href="/" class="text-red-500 font-semibold hover:underline">Gujarat Darshan</a>. All Rights Reserved.</span>
@@ -90,6 +117,7 @@
             </div>
         </div>
     </div>
+    
 </footer>
 <section class="relative">
     <div class="relative text-center z-10">
