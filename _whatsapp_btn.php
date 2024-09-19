@@ -15,6 +15,9 @@
             </svg>
         </a>
     </div>
-
-
+</div>
+<div class="fixed flex flex-col bottom-4 left-4 z-50">
+<button class="openModalBtn px-6 py-2 bg-indigo-600 text-white rounded-lg shadow-lg hover:bg-indigo-800 transition">
+              Inquire Now
+            </button>
 </div>
