@@ -1,6 +1,6 @@
 <!-- form-modal.php -->
-<div id="tourModal" class="absolute top-0 left-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
-    <div class="relative bg-white rounded-lg shadow-lg max-w-lg w-full p-8 space-y-6 max-h-28 overflow-y-auto">
+<div id="tourModal" class="fixed top-0 left-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
+    <div class="relative bg-white rounded-lg shadow-lg max-w-lg w-full p-8 space-y-6 max-h-dvh overflow-y-auto">
         <!-- Close Button (can be fixed on top if needed) -->
         <button type="button" id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -12,13 +12,13 @@
 
         <!-- Tour Inquiry Form -->
         <form action="/smtp/send.php" method="POST" class="space-y-6">
-            
+
             <!-- Name Field -->
             <div class="flex flex-col">
                 <label for="name" class="text-sm font-medium text-gray-700">Your Name</label>
                 <input type="text" id="name" name="name" required class="mt-2 px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
             </div>
-            
+
             <!-- Email Field -->
             <div class="flex flex-col">
                 <label for="email" class="text-sm font-medium text-gray-700">Email Address</label>
@@ -30,7 +30,7 @@
                 <label for="phone" class="text-sm font-medium text-gray-700">Contact Number</label>
                 <input type="tel" id="phone" name="phone" required class="mt-2 px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent">
             </div>
-            
+
             <!-- Destination Field -->
             <div class="flex flex-col">
                 <label for="destination" class="text-sm font-medium text-gray-700">Preferred Destination</label>
