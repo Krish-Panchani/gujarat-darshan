@@ -92,31 +92,55 @@ require_once "_header.php"; ?>
                     </div>
 
                     <div class="mt-8 lg:w-1/2 lg:mx-6">
-                        <div class="w-full px-4 sm:px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl dark:bg-gray-900 lg:max-w-xl shadow-gray-300/50 dark:shadow-black/50">
+                        <div class="w-full px-4 sm:px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50">
                             <h1 class="text-lg font-medium text-gray-700">Get a Free Quote / Booking Inquiry</h1>
 
-                            <form class="mt-6">
+                            <form action="/smtp/send.php" method="POST" class="mt-6">
                                 <div class="flex-1">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Full Name</label>
-                                    <input type="text" placeholder="John Doe" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <label class="block mb-2 text-sm text-gray-600">Full Name</label>
+                                    <input type="text" name="full_name" placeholder="John Doe" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
 
                                 <div class="flex-1 mt-6">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Email address</label>
-                                    <input type="email" placeholder="johndoe@example.com" class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <label class="block mb-2 text-sm text-gray-600">Email address</label>
+                                    <input type="email" name="email" placeholder="johndoe@example.com" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                </div>
+
+                                <div class="flex-1 mt-6">
+                                    <label class="block mb-2 text-sm text-gray-600">Phone Number</label>
+                                    <input type="tel" name="phone" placeholder="+1234567890" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                </div>
+
+                                <div class="flex-1 mt-6">
+                                    <label class="block mb-2 text-sm text-gray-600">Preferred Destination</label>
+                                    <input type="text" name="destination" placeholder="e.g., Paris, New York" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                </div>
+
+                                <div class="flex-1 mt-6">
+                                    <label class="block mb-2 text-sm text-gray-600">Travel Dates</label>
+                                    <div class="flex space-x-4">
+                                        <input type="date" name="start_date" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                        <input type="date" name="end_date" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    </div>
+                                </div>
+
+                                <div class="flex-1 mt-6">
+                                    <label class="block mb-2 text-sm text-gray-600">Number of Travelers</label>
+                                    <input type="number" name="travelers" placeholder="1" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                 </div>
 
                                 <div class="w-full mt-6">
-                                    <label class="block mb-2 text-sm text-gray-600 dark:text-gray-200">Message</label>
-                                    <textarea class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 dark:placeholder-gray-600 dark:bg-gray-900 dark:text-gray-300 dark:border-gray-700 focus:border-blue-400 dark:focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
+                                    <label class="block mb-2 text-sm text-gray-600">Additional Comments</label>
+                                    <textarea name="comments" class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                                 </div>
 
-                                <button class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
+                                <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
                                     Send Message
                                 </button>
                             </form>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>
