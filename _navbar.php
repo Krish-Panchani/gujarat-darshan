@@ -56,17 +56,17 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
                         <div class="z-50 px-2 py-2 bg-white rounded-md shadow">
                             <?php
                             $menuItems = [
-                                'Rann of kutch package' => '/gujarattravels/tour-packages/rann-of-kutch-package',
-                                'Dwarka tour packages' => '/gujarattravels/tour-packages/dwarka-tour-packages',
-                                'Somnath tour packages' => '/gujarattravels/tour-packages/somnath-tour-packages',
-                                'Dwarka somnath tour' => '/gujarattravels/tour-packages/dwarka-somnath-tour',
-                                'Pancha dwarka yatra' => '/gujarattravels/tour-packages/pancha-dwarka-yatra',
-                                'Statue of unity tour' => '/gujarattravels/tour-packages/statue-of-unity-tour',
-                                'Saurashtra tour ahmedabad' => '/gujarattravels/tour-packages/saurashtra-tour-ahmedabad',
-                                'Gir jungle safari' => '/gujarattravels/tour-packages/gir-jungle-safari',
-                                'Gujarat diu tour' => '/gujarattravels/tour-packages/gujarat-diu-tour',
-                                'Best of kutch tour' => '/gujarattravels/tour-packages/best-of-kutch-tour',
-                                'Colours of gujarat tour' => '/gujarattravels/tour-packages/colours-of-gujarat-tour',
+                                'Rann of Kutch Package' => '/gujarattravels/tour-packages/rann-of-kutch-package',
+                                'Dwarka Tour Packages' => '/gujarattravels/tour-packages/dwarka-tour-packages',
+                                'Somnath Tour Packages' => '/gujarattravels/tour-packages/somnath-tour-packages',
+                                'Dwarka Somnath Tour' => '/gujarattravels/tour-packages/dwarka-somnath-tour',
+                                'Pancha Dwarka Yatra' => '/gujarattravels/tour-packages/pancha-dwarka-yatra',
+                                'Statue of Unity Tour' => '/gujarattravels/tour-packages/statue-of-unity-tour',
+                                'Saurashtra Tour Ahmedabad' => '/gujarattravels/tour-packages/saurashtra-tour-ahmedabad',
+                                'Gir Jungle Safari' => '/gujarattravels/tour-packages/gir-jungle-safari',
+                                'Gujarat Diu Tour' => '/gujarattravels/tour-packages/gujarat-diu-tour',
+                                'Best of Kutch Tour' => '/gujarattravels/tour-packages/best-of-kutch-tour',
+                                'Colours of Gujarat Tour' => '/gujarattravels/tour-packages/colours-of-gujarat-tour',
                             ];
                             ?>
 
