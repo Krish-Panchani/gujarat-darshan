@@ -6,6 +6,13 @@ require_once "_header.php"; ?>
 <?php require_once "_navbar.php"; ?>
 <?php require_once "_whatsapp_btn.php"; ?>
 
+    <!-- Button to trigger the modal -->
+    <button class="openModalBtn px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-700 transition">
+    Open Form
+</button>
+
+    <?php require '_contact-form-popup.php'; ?>
+
 <div class="w-full relative px-6">
   <div class="swiper vertical-slide-carousel swiper-container relative h-96 rounded-3xl">
     <div class="swiper-wrapper">
@@ -412,5 +419,29 @@ require_once "_header.php"; ?>
       });
   });
 </script>
+
+<script>
+        // Get modal, button, and close elements
+        const modal = document.getElementById('myModal');
+        const openModalBtn = document.getElementById('openModal');
+        const closeModalBtn = document.getElementById('closeModal');
+
+        // When the user clicks the button, open the modal
+        openModalBtn.addEventListener('click', () => {
+            modal.classList.remove('hidden');
+        });
+
+        // When the user clicks the "close" button, hide the modal
+        closeModalBtn.addEventListener('click', () => {
+            modal.classList.add('hidden');
+        });
+
+        // Close the modal if user clicks outside of the modal content
+        window.addEventListener('click', (event) => {
+            if (event.target == modal) {
+                modal.classList.add('hidden');
+            }
+        });
+    </script>
 
 <?php require_once "_footer.php"; ?>
