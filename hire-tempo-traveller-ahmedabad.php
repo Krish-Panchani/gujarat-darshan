@@ -60,6 +60,8 @@ require_once "_header.php"; ?>
         </section>
     </div>
 </div>
+
+
 <section class="py-14" id="travellers">
     <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
         <div class="relative max-w-2xl mx-auto sm:text-center">
@@ -77,103 +79,138 @@ require_once "_header.php"; ?>
           );
         "></div>
         </div>
-        <div class="relative mt-12">
-            <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-4 w-f">
-                <?php
-                $services = [
-                    [
-                        'image' => 'tempo-hire.png',
-                        'title' => '9 Seater Tempo',
-                        'tag' => '9 People ',
-                    ],
-                    [
-                        'image' => 'tempo-hire.png',
-                        'title' => '11 Seater Tempo',
-                        'tag' => '11 People ',
-                    ],
-                    [
-                        'image' => 'tempo-hire.png',
-                        'title' => '11 Seater Tempo',
-                        'tag' => '14 People ',
-                    ],
-                    [
-                        'image' => 'tempo-hire.png',
-                        'title' => '17/20 Seater Tempo',
-                        'tag' => '17/20 People ',
-                    ],
-                ];
-
-                foreach ($services as $service) {
-                ?>
-                    <div class="bg-white space-y-3 p-4 border-2 border-red-400 rounded-lg">
-                        <img class="object-cover object-center" src="images/<?php echo $service['image']; ?>" alt="<?php echo $service['title']; ?>">
-                        <h3 class="text-lg font-semibold text-gray-800 text-center"><?php echo $service['title']; ?></h3>
-                        <ul class="flex flex-col">
-                            <li class="flex items-center text-base mt-2">
-                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
-                                </svg>
-                                <?php echo $service['tag']; ?>
-                            </li>
-                            <li class="flex items-center text-base mt-2">
-                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
-                                </svg>
-                                1 Cheaffeur + 1 Cleaner
-                            </li>
-                            <li class="flex items-center text-base mt-2">
-                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
-                                </svg>
-                                300 kms per Day
-                            </li>
-                            <li class="flex items-center text-base mt-2">
-                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
-                                </svg>
-                                300 rs Driver Allowance
-                            </li>
-                            <li class="flex items-center text-base mt-2">
-                                <svg class="w-6 h-6 text-gray-800 mr-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 24 24">
-                                    <path fill-rule="evenodd" d="M2 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10S2 17.523 2 12Zm13.707-1.293a1 1 0 0 0-1.414-1.414L11 12.586l-1.793-1.793a1 1 0 0 0-1.414 1.414l2.5 2.5a1 1 0 0 0 1.414 0l4-4Z" clip-rule="evenodd" />
-                                </svg>
-                                Toll Tax and Parking Extra
-                            </li>
-                        </ul>
-                        <a href="https://api.whatsapp.com/send/?phone=919512646767" target="_blank"  class="flex justify-end">
-                            <button class="mt-6 select-none font-sans font-bold text-center uppercase transition-all text-xs py-3 px-6 rounded-lg bg-gradient-to-r from-pink-500 to-rose-500 text-white shadow-md shadow-gray-900/10 hover:shadow-lg hover:shadow-gray-900/20" type="button">
-                                Book Now
-                            </button>
-                        </a>
-                    </div>
-                <?php } ?>
-            </div>
-        </div>
     </div>
 </section>
 
-<section class="bg-white dark:bg-gray-900">
-    <div class="container px-6 py-10 mx-auto">
-        <h3 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
-            Who Does Gujarat Darshan Tempo Traveller on Rent Service Cater To?
-        </h3>
+<?php
+$busRates = [
+    '17 Seater' => [
+        'Capacity' => '17+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => '24 Rs.',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+    '20 Seater' => [
+        'Capacity' => '20+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => '30 Rs.',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+    '23 Seater' => [
+        'Capacity' => '23+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => '35 Rs.',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+];
+?>
 
-        <div class="flex justify-center mx-auto mt-6">
-            <span class="inline-block w-40 h-1 bg-red-500 rounded-full"></span>
-            <span class="inline-block w-3 h-1 mx-1 bg-red-500 rounded-full"></span>
-            <span class="inline-block w-1 h-1 bg-blue-red rounded-full"></span>
-        </div>
+<div class="flex flex-col md:flex-row mx-auto px-4 py-8 gap-8 text-gray-600 overflow-hidden md:px-4">
+    <div>
+        <section class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="images/urbania_img/urbania1.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania2.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania3.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania4.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania5.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania6.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <!-- <img src="https://via.placeholder.com/400" alt="Tempo Traveller 6" class="w-full h-auto"> -->
+            </div>
+        </section>
 
-        <div class="flex items-start max-w-6xl mx-auto mt-16">
-            <div class="flex flex-col">
-                <p class="text-center text-gray-500 lg:mx-8">
-                    Gujarat Darshan <strong>Tempo Traveller on Rent in Ahmedabad</strong> service is available for all kinds of events and occasions, whether you need it for a corporate function, a wedding, or any other special occasion.
-                </p>
-                <p class="text-center text-gray-500 lg:mx-8">
-                    To meet your particular demands and preferences, our Tempo travellers are available in a range of sizes, seating capacities, and designs. For <strong>tempo traveller hire in Ahmedabad</strong> contact us for your event or occasion and select the best vehicle from our large selection of Tempo Travellers which are well-kept and equipped with the latest conveniences to give you the best service.
-                </p>
+        <section class="mb-8">
 
-                <!-- <div class="flex flex-col items-center justify-center mt-8">
+            <!-- Buttons -->
+            <div class="mb-4 flex justify-center space-x-2">
+                <?php foreach ($busRates as $busType => $rates): ?>
+                    <button class="py-2 px-4 font-semibold border border-transparent rounded-full bg-gradient-to-r from-red-500 to-pink-500 text-white hover:shadow-lg transform transition-all duration-200" onclick="showTable('<?php echo strtolower(str_replace(' ', '-', $busType)); ?>')">
+                        <?php echo $busType; ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Rate Tables -->
+            <?php foreach ($busRates as $busType => $rates): ?>
+                <div id="<?php echo strtolower(str_replace(' ', '-', $busType)); ?>" class="rate-table rounded-3xl shadow-lg overflow-hidden <?php echo $busType === '17 Seater' ? '' : 'hidden'; ?>">
+                    <table class="table-auto w-full bg-white transition-all duration-300">
+                        <thead class="bg-gradient-to-r from-red-400 to-pink-500 text-white">
+                            <tr>
+                                <th class="px-4 py-2 text-left">Service Type</th>
+                                <th class="px-4 py-2 text-left">Rate/Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($rates as $item => $price): ?>
+                                <tr class="hover:bg-gray-100 transition-colors duration-200">
+                                    <td class="border px-4 py-2 font-semibold"><?php echo $item; ?></td>
+                                    <td class="border px-4 py-2"><?php echo $price; ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            <?php endforeach; ?>
+        </section>
+    </div>
+</div>
+
+        <script>
+            function showTable(tableId) {
+                // Hide all tables
+                const tables = document.querySelectorAll('.rate-table');
+                tables.forEach(table => {
+                    table.classList.add('hidden');
+                });
+
+                // Show selected table
+                const selectedTable = document.getElementById(tableId);
+                if (selectedTable) {
+                    selectedTable.classList.remove('hidden');
+                }
+            }
+        </script>
+
+        <section class="bg-white dark:bg-gray-900">
+            <div class="container px-6 py-10 mx-auto">
+                <h3 class="text-2xl font-semibold text-center text-gray-800 capitalize lg:text-3xl dark:text-white">
+                    Who Does Gujarat Darshan Tempo Traveller on Rent Service Cater To?
+                </h3>
+
+                <div class="flex justify-center mx-auto mt-6">
+                    <span class="inline-block w-40 h-1 bg-red-500 rounded-full"></span>
+                    <span class="inline-block w-3 h-1 mx-1 bg-red-500 rounded-full"></span>
+                    <span class="inline-block w-1 h-1 bg-blue-red rounded-full"></span>
+                </div>
+
+                <div class="flex items-start max-w-6xl mx-auto mt-16">
+                    <div class="flex flex-col">
+                        <p class="text-center text-gray-500 lg:mx-8">
+                            Gujarat Darshan <strong>Tempo Traveller on Rent in Ahmedabad</strong> service is available for all kinds of events and occasions, whether you need it for a corporate function, a wedding, or any other special occasion.
+                        </p>
+                        <p class="text-center text-gray-500 lg:mx-8">
+                            To meet your particular demands and preferences, our Tempo travellers are available in a range of sizes, seating capacities, and designs. For <strong>tempo traveller hire in Ahmedabad</strong> contact us for your event or occasion and select the best vehicle from our large selection of Tempo Travellers which are well-kept and equipped with the latest conveniences to give you the best service.
+                        </p>
+
+                        <!-- <div class="flex flex-col items-center justify-center mt-8">
                     <img class="object-cover rounded-full w-14 h-14" src="https://images.unsplash.com/photo-1499470932971-a90681ce8530?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80" alt="">
 
                     <div class="mt-4 text-center">
@@ -181,127 +218,127 @@ require_once "_header.php"; ?>
                         <span class="text-sm text-gray-500 dark:text-gray-400">Marketer</span>
                     </div>
                 </div> -->
+                    </div>
+                </div>
             </div>
-        </div>
-    </div>
-</section>
+        </section>
 
 
-<section class="relative py-28 bg-gray-900">
-    <div class="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
-        <div class="max-w-xl">
-            <h3 class="text-white text-3xl font-semibold sm:text-4xl">
-                Let us show you the Gujarat
-            </h3>
-            <p class="mt-3">
-                Let us show you the Gujarat that few know of – its rich tradition, diverse culture, delectable cuisine and its scintillating crafts.
-            </p>
-        </div>
-        <div class="mt-12 lg:mt-0">
-            <ul class="grid gap-8 sm:grid-cols-2">
-                <?php
-                $features = [
-                    [
-                        'icon' => '<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
+        <section class="relative py-28 bg-gray-900">
+            <div class="relative z-10 max-w-screen-xl mx-auto px-4 text-gray-300 justify-between gap-24 lg:flex md:px-8">
+                <div class="max-w-xl">
+                    <h3 class="text-white text-3xl font-semibold sm:text-4xl">
+                        Let us show you the Gujarat
+                    </h3>
+                    <p class="mt-3">
+                        Let us show you the Gujarat that few know of – its rich tradition, diverse culture, delectable cuisine and its scintillating crafts.
+                    </p>
+                </div>
+                <div class="mt-12 lg:mt-0">
+                    <ul class="grid gap-8 sm:grid-cols-2">
+                        <?php
+                        $features = [
+                            [
+                                'icon' => '<path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.583 8.445h.01M10.86 19.71l-6.573-6.63a.993.993 0 0 1 0-1.4l7.329-7.394A.98.98 0 0 1 12.31 4l5.734.007A1.968 1.968 0 0 1 20 5.983v5.5a.992.992 0 0 1-.316.727l-7.44 7.5a.974.974 0 0 1-1.384.001Z"/>
                 ',
-                        'title' => 'Reasonable Price',
-                        'desc' => 'We offer one of the most reasonable price throughout the market.'
-                    ],
-                    [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
+                                'title' => 'Reasonable Price',
+                                'desc' => 'We offer one of the most reasonable price throughout the market.'
+                            ],
+                            [
+                                'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M21 8.25c0-2.485-2.099-4.5-4.688-4.5-1.935 0-3.597 1.126-4.312 2.733-.715-1.607-2.377-2.733-4.313-2.733C5.1 3.75 3 5.765 3 8.25c0 7.22 9 12 9 12s9-4.78 9-12Z" />
               ',
-                        'title' => '20+ Years of Experience',
-                        'desc' => 'We are very proud to say that we can give you the best advice for your trip.'
-                    ],
-                    [
-                        'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+                                'title' => '20+ Years of Experience',
+                                'desc' => 'We are very proud to say that we can give you the best advice for your trip.'
+                            ],
+                            [
+                                'icon' => '<path stroke-linecap="round" stroke-linejoin="round" d="M18 18.72a9.094 9.094 0 0 0 3.741-.479 3 3 0 0 0-4.682-2.72m.94 3.198.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0 1 12 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 0 1 6 18.719m12 0a5.971 5.971 0 0 0-.941-3.197m0 0A5.995 5.995 0 0 0 12 12.75a5.995 5.995 0 0 0-5.058 2.772m0 0a3 3 0 0 0-4.681 2.72 8.986 8.986 0 0 0 3.74.477m.94-3.197a5.971 5.971 0 0 0-.94 3.197M15 6.75a3 3 0 1 1-6 0 3 3 0 0 1 6 0Zm6 3a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Zm-13.5 0a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
                 ',
-                        'title' => 'Professional Local Tour Guide',
-                        'desc' => 'You will be full of information with our exceptional local tour guide.'
-                    ],
-                ];
+                                'title' => 'Professional Local Tour Guide',
+                                'desc' => 'You will be full of information with our exceptional local tour guide.'
+                            ],
+                        ];
 
-                foreach ($features as $feature) {
-                ?>
-                    <li class="flex gap-x-4">
-                        <div class="flex-none w-12 h-12 bg-gray-700 text-red-400 rounded-lg flex items-center justify-center">
+                        foreach ($features as $feature) {
+                        ?>
+                            <li class="flex gap-x-4">
+                                <div class="flex-none w-12 h-12 bg-gray-700 text-red-400 rounded-lg flex items-center justify-center">
 
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
-                                <?php echo $feature['icon']; ?>
-                            </svg>
-                        </div>
-                        <div>
-                            <h4 class="text-lg text-gray-100 font-semibold">
-                                <?php echo $feature['title']; ?>
-                            </h4>
-                            <p class="mt-3">
-                                <?php echo $feature['desc']; ?>
-                            </p>
-                        </div>
-                    </li>
-                <?php
-                }
-                ?>
-            </ul>
-        </div>
-        <div class="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]" style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
-    </div>
-</section>
-
-<section class="relative pb-8 bg-gray-900">
-    <div class="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
-        <div class="z-10">
-            <div class="max-w-6xl xl:mx-auto xl:text-center">
-                <h3 class="text-white text-2xl font-semibold sm:text-3xl">
-                    Why Should You Choose Gujarat Darshan Tempo Traveller Service?
-                </h3>
-                <p class="mt-3 text-gray-300">
-                    There are many reasons why you should choose us when you need to hire a tempo traveller in Ahmedabad, Gujarat.
-                </p>
-                <ul>
-                    <li class="text-gray-300">
-                        The first reason is that you get a chance to Hire Tempo Traveller in Ahmedabad at Low Price from Gujarat Darshan.
-                    </li>
-                    <li class="text-gray-300">
-                        We are a leading provider of tempo traveller for hire in Ahmedabad, and we have a wide range of vehicles to choose from for your needs.
-                    </li>
-                    <li class="text-gray-300">
-                        Gujarat Darshan provides you with Tempo Traveller according to your specific needs and requirements for your event or occasion.
-                    </li>
-                </ul>
+                                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                                        <?php echo $feature['icon']; ?>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="text-lg text-gray-100 font-semibold">
+                                        <?php echo $feature['title']; ?>
+                                    </h4>
+                                    <p class="mt-3">
+                                        <?php echo $feature['desc']; ?>
+                                    </p>
+                                </div>
+                            </li>
+                        <?php
+                        }
+                        ?>
+                    </ul>
+                </div>
+                <div class="absolute inset-0 max-w-md mx-auto h-72 blur-[118px]" style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
             </div>
-        </div>
+        </section>
+
+        <section class="relative pb-8 bg-gray-900">
+            <div class="relative z-10 max-w-screen-xl mx-auto px-4 md:px-8">
+                <div class="z-10">
+                    <div class="max-w-6xl xl:mx-auto xl:text-center">
+                        <h3 class="text-white text-2xl font-semibold sm:text-3xl">
+                            Why Should You Choose Gujarat Darshan Tempo Traveller Service?
+                        </h3>
+                        <p class="mt-3 text-gray-300">
+                            There are many reasons why you should choose us when you need to hire a tempo traveller in Ahmedabad, Gujarat.
+                        </p>
+                        <ul>
+                            <li class="text-gray-300">
+                                The first reason is that you get a chance to Hire Tempo Traveller in Ahmedabad at Low Price from Gujarat Darshan.
+                            </li>
+                            <li class="text-gray-300">
+                                We are a leading provider of tempo traveller for hire in Ahmedabad, and we have a wide range of vehicles to choose from for your needs.
+                            </li>
+                            <li class="text-gray-300">
+                                Gujarat Darshan provides you with Tempo Traveller according to your specific needs and requirements for your event or occasion.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute inset-0 max-w-md mx-auto h-80 blur-[118px] sm:h-72" style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
     </div>
-    <div class="absolute inset-0 max-w-md mx-auto h-80 blur-[118px] sm:h-72" style="background: linear-gradient(152.92deg, rgba(192, 132, 252, 0.2) 4.54%, rgba(232, 121, 249, 0.26) 34.2%, rgba(192, 132, 252, 0.1) 77.55%)"></div>
-    </div>
-</section>
+    </section>
 
 
-<script>
-    document.addEventListener("alpine:init", () => {
-        Alpine.data("dropdown", () => ({
-            open: false,
-            toggle() {
-                this.open = !this.open;
-            },
-            close() {
-                this.open = false;
-            },
-            init() {
-                this.$watch("open", (value) => {
-                    if (value) {
-                        this.$nextTick(() => {
-                            window.addEventListener("click", this.close);
-                        });
-                    } else {
-                        window.removeEventListener("click", this.close);
-                    }
-                });
-            },
-        }));
-    });
-</script>
-<?php require_once "_footer.php"; ?>
-</body>
+    <script>
+        document.addEventListener("alpine:init", () => {
+            Alpine.data("dropdown", () => ({
+                open: false,
+                toggle() {
+                    this.open = !this.open;
+                },
+                close() {
+                    this.open = false;
+                },
+                init() {
+                    this.$watch("open", (value) => {
+                        if (value) {
+                            this.$nextTick(() => {
+                                window.addEventListener("click", this.close);
+                            });
+                        } else {
+                            window.removeEventListener("click", this.close);
+                        }
+                    });
+                },
+            }));
+        });
+    </script>
+    <?php require_once "_footer.php"; ?>
+    </body>
 
-</html>
+    </html>
