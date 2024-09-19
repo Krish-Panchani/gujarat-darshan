@@ -1,5 +1,5 @@
 <!-- form-modal.php -->
-<div id="tourModal" class="absolute items-center justify-center bg-black bg-opacity-50 hidden z-50">
+<div id="tourModal" class="absolute top-0 left-0 items-center justify-center bg-black bg-opacity-50 hidden z-50">
     <div class="relative bg-white rounded-lg shadow-lg max-w-lg w-full p-8 space-y-6 max-h-28 overflow-y-auto">
         <!-- Close Button (can be fixed on top if needed) -->
         <button type="button" id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-700 focus:outline-none">
@@ -11,7 +11,7 @@
         <h2 class="text-2xl font-semibold mb-4 text-center text-gray-800">Plan Your Perfect Tour</h2>
 
         <!-- Tour Inquiry Form -->
-        <form action="/gujarattravels/smtp/send.php" method="POST" class="space-y-6">
+        <form action="/smtp/send.php" method="POST" class="space-y-6">
             
             <!-- Name Field -->
             <div class="flex flex-col">
