@@ -137,3 +137,5 @@ $dropdownLinkClass = "z-50 block px-4 py-2 mt-2 text-sm font-semibold bg-white r
         </div>
     </div>
 </main>
+
+<?php require_once "_whatsapp_btn.php"; ?>
