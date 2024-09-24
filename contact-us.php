@@ -36,7 +36,7 @@ require_once "_header.php"; ?>
                                 </svg>
 
                                 <span class="mx-2 text-gray-700 truncate w-72 dark:text-gray-400">
-                                M-106 - Swaminarayan Park-1, Opp. Mangaldeep Vidyalaya, New Vadaj, Ahmedabad
+                                    M-106 - Swaminarayan Park-1, Opp. Mangaldeep Vidyalaya, New Vadaj, Ahmedabad
                                 </span>
                             </p>
 
@@ -94,43 +94,49 @@ require_once "_header.php"; ?>
                         <div class="w-full px-4 sm:px-8 py-10 mx-auto overflow-hidden bg-white rounded-lg shadow-2xl lg:max-w-xl shadow-gray-300/50">
                             <h1 class="text-lg font-medium text-gray-700">Get a Free Quote / Booking Inquiry</h1>
 
-                            <form action="/smtp/send.php" method="POST" class="mt-6">
+                            <form id="quoteForm" action="/smtp/send.php" method="POST" class="mt-6">
                                 <div class="flex-1">
                                     <label class="block mb-2 text-sm text-gray-600">Full Name</label>
-                                    <input type="text" name="full_name" placeholder="John Doe" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="text" id="full_name" name="full_name" placeholder="John Doe" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <span id="nameError" class="text-red-500 text-sm hidden">Please enter your name.</span>
                                 </div>
 
                                 <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Email address</label>
-                                    <input type="email" name="email" placeholder="johndoe@example.com" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="email" id="email" name="email" placeholder="johndoe@example.com" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <span id="emailError" class="text-red-500 text-sm hidden">Please enter a valid email address.</span>
                                 </div>
 
                                 <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Phone Number</label>
-                                    <input type="tel" name="phone" placeholder="+1234567890" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="tel" id="phone" name="phone" placeholder="+1234567890" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <span id="phoneError" class="text-red-500 text-sm hidden">Please enter a valid phone number.</span>
                                 </div>
 
                                 <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Preferred Destination</label>
-                                    <input type="text" name="destination" placeholder="e.g., Paris, New York" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="text" id="destination" name="destination" placeholder="e.g., Paris, New York" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <span id="destinationError" class="text-red-500 text-sm hidden">Please enter a destination.</span>
                                 </div>
 
                                 <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Travel Dates</label>
                                     <div class="flex space-x-4">
-                                        <input type="date" name="start_date" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
-                                        <input type="date" name="end_date" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                        <input type="date" id="start_date" name="start_date" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                        <input type="date" id="end_date" name="end_date" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
                                     </div>
+                                    <span id="dateError" class="text-red-500 text-sm hidden">End date must be after start date.</span>
                                 </div>
 
                                 <div class="flex-1 mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Number of Travelers</label>
-                                    <input type="number" name="travelers" placeholder="1" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <input type="number" id="travelers" name="travelers" placeholder="1" min="1" max="50" required class="block w-full px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" />
+                                    <span id="travelersError" class="text-red-500 text-sm hidden">Please enter a number between 1 and 50.</span>
                                 </div>
 
                                 <div class="w-full mt-6">
                                     <label class="block mb-2 text-sm text-gray-600">Additional Comments</label>
-                                    <textarea name="comments" class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
+                                    <textarea id="comments" name="comments" class="block w-full h-32 px-5 py-3 mt-2 text-gray-700 placeholder-gray-400 bg-white border border-gray-200 rounded-md md:h-48 focus:border-blue-400 focus:ring-blue-400 focus:outline-none focus:ring focus:ring-opacity-40" placeholder="Message"></textarea>
                                 </div>
 
                                 <button type="submit" class="w-full px-6 py-3 mt-6 text-sm font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-blue-500 rounded-md hover:bg-blue-400 focus:outline-none focus:ring focus:ring-blue-300 focus:ring-opacity-50">
@@ -140,11 +146,73 @@ require_once "_header.php"; ?>
                         </div>
                     </div>
 
+
+
                 </div>
             </div>
         </section>
     </div>
 
+    <script>
+        document.getElementById('quoteForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent the form from submitting by default
+
+            let valid = true;
+
+            // Reset all error messages
+            document.querySelectorAll('.text-red-500').forEach(el => el.classList.add('hidden'));
+
+            // Validate Full Name
+            const fullName = document.getElementById('full_name').value;
+            if (fullName.trim() === '') {
+                document.getElementById('nameError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Email
+            const email = document.getElementById('email').value;
+            const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailRegex.test(email)) {
+                document.getElementById('emailError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Phone Number
+            const phone = document.getElementById('phone').value;
+            const phoneRegex = /^\+?[0-9]{10,14}$/;
+            if (!phoneRegex.test(phone)) {
+                document.getElementById('phoneError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Destination
+            const destination = document.getElementById('destination').value;
+            if (destination.trim() === '') {
+                document.getElementById('destinationError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Dates (Start Date and End Date)
+            const startDate = new Date(document.getElementById('start_date').value);
+            const endDate = new Date(document.getElementById('end_date').value);
+            if (startDate >= endDate) {
+                document.getElementById('dateError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // Validate Number of Travelers
+            const travelers = document.getElementById('travelers').value;
+            if (travelers < 1 || travelers > 50) {
+                document.getElementById('travelersError').classList.remove('hidden');
+                valid = false;
+            }
+
+            // If the form is valid, submit it
+            if (valid) {
+                this.submit(); // Submit the form programmatically
+            }
+        });
+    </script>
     <?php require_once "_footer.php"; ?>
     </body>
 
