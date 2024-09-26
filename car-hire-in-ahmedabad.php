@@ -60,7 +60,7 @@ require_once "_header.php"; ?>
         </section>
     </div>
 </div>
-<section class="py-14" id="cars">
+<!-- <section class="py-14" id="cars">
     <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
         <div class="relative max-w-2xl mx-auto sm:text-center">
             <div class="relative z-10">
@@ -155,7 +155,162 @@ require_once "_header.php"; ?>
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="py-14" id="travellers">
+    <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
+        <div class="relative max-w-2xl mx-auto sm:text-center">
+            <div class="relative z-10">
+                <h2 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    Cars on Rent in Ahmedabad
+                </h2>
+            </div>
+            <div class="absolute inset-0 max-w-xs mx-auto h-44 blur-[118px]" style="
+          background: linear-gradient(
+            152.92deg,
+            rgba(192, 132, 252, 0.2) 4.54%,
+            rgba(232, 121, 249, 0.26) 34.2%,
+            rgba(192, 132, 252, 0.1) 77.55%
+          );
+        "></div>
+        </div>
+    </div>
 </section>
+
+<?php
+$busRates = [
+    'Maruti Swift Dzire' => [
+        'Capacity' => '4+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+    'Maruti Ertiga' => [
+        'Capacity' => '6+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+    'Toyota Crysta' => [
+        'Capacity' => '6+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+    'Toyota Innova' => [
+        'Capacity' => '6+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+    'Kia Carens' => [
+        'Capacity' => '6+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+    ],
+];
+?>
+
+<div class="flex flex-col md:flex-row mx-auto px-4 py-8 gap-8 text-gray-600 overflow-hidden md:px-4">
+    <div>
+        <section class="mb-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <img src="images/urbania_img/urbania1.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania2.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania3.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania4.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania5.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <img src="images/urbania_img/urbania6.jpeg" alt="Tempo Traveller 1" class="w-full h-auto">
+                <!-- <img src="https://via.placeholder.com/400" alt="Tempo Traveller 6" class="w-full h-auto"> -->
+            </div>
+        </section>
+
+        <section class="mb-8">
+
+            <!-- Buttons -->
+            <div class="mb-4 flex justify-center space-x-2">
+                <?php foreach ($busRates as $busType => $rates): ?>
+                    <button class="py-2 px-4 font-semibold border border-transparent rounded-full bg-gradient-to-r from-red-500 to-pink-500 text-white hover:shadow-lg transform transition-all duration-200" onclick="showTable('<?php echo strtolower(str_replace(' ', '-', $busType)); ?>')">
+                        <?php echo $busType; ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Rate Tables -->
+            <?php foreach ($busRates as $busType => $rates): ?>
+                <div id="<?php echo strtolower(str_replace(' ', '-', $busType)); ?>" class="rate-table rounded-3xl shadow-lg overflow-hidden <?php echo $busType === 'Maruti Swift Dzire' ? '' : 'hidden'; ?>">
+                    <table class="table-auto w-full bg-white transition-all duration-300">
+                        <thead class="bg-gradient-to-r from-red-400 to-pink-500 text-white">
+                            <tr>
+                                <th class="px-4 py-2 text-left">Service Type</th>
+                                <th class="px-4 py-2 text-left">Rate/Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($rates as $item => $price): ?>
+                                <tr class="hover:bg-gray-100 transition-colors duration-200">
+                                    <td class="border px-4 py-2 font-semibold"><?php echo $item; ?></td>
+                                    <td class="border px-4 py-2"><?php echo $price; ?></td>
+                                </tr>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            <?php endforeach; ?>
+
+            <a href="tel:09512646767" class="flex w-full">
+                <button class="px-4 py-4 w-full text-xl bg-gradient-to-r from-amber-500 to-pink-500 text-white font-bold rounded mt-4">HIRE A CAR NOW</button>
+            </a>
+        </section>
+    </div>
+</div>
+
+<script>
+    function showTable(tableId) {
+        // Hide all tables
+        const tables = document.querySelectorAll('.rate-table');
+        tables.forEach(table => {
+            table.classList.add('hidden');
+        });
+
+        // Show selected table
+        const selectedTable = document.getElementById(tableId);
+        if (selectedTable) {
+            selectedTable.classList.remove('hidden');
+        }
+    }
+</script>
 
 <section class="bg-white dark:bg-gray-900">
     <div class="container px-6 py-10 mx-auto">

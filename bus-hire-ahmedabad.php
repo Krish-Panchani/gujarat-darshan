@@ -64,7 +64,7 @@ require_once "_header.php"; ?>
         </section>
     </div>
 </div>
-<section class="py-14" id="buses">
+<!-- <section class="py-14" id="buses">
     <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
         <div class="relative max-w-2xl mx-auto sm:text-center">
             <div class="relative z-10">
@@ -168,8 +168,344 @@ require_once "_header.php"; ?>
             </div>
         </div>
     </div>
+</section> -->
+
+<section class="py-14" id="buses">
+    <div class="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-4">
+        <div class="relative max-w-2xl mx-auto sm:text-center">
+            <div class="relative z-10">
+                <h2 class="text-gray-800 text-3xl font-semibold sm:text-4xl">
+                    Luxury Bus on Rent in Ahmedabad
+                </h2>
+            </div>
+            <div class="absolute inset-0 max-w-xs mx-auto h-44 blur-[118px]" style="
+          background: linear-gradient(
+            152.92deg,
+            rgba(192, 132, 252, 0.2) 4.54%,
+            rgba(232, 121, 249, 0.26) 34.2%,
+            rgba(192, 132, 252, 0.1) 77.55%
+          );
+        "></div>
+        </div>
+    </div>
 </section>
 
+<?php
+$busRates = [
+    '20 Seater' => [
+        'Capacity' => '20+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '20-25seater/20-25seater-1.jpg',
+            '20-25seater/20-25seater-2.jpg',
+            '20-25seater/20-25seater-3.jpg',
+            '20-25seater/20-25seater-4.jpg',
+            '20-25seater/20-25seater-5.jpg',
+            '20-25seater/20-25seater-6.jpg',
+        ]
+    ],
+    '25 Seater' => [
+        'Capacity' => '25+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '20-25seater/20-25seater-1.jpg',
+            '20-25seater/20-25seater-2.jpg',
+            '20-25seater/20-25seater-3.jpg',
+            '20-25seater/20-25seater-4.jpg',
+            '20-25seater/20-25seater-5.jpg',
+            '20-25seater/20-25seater-6.jpg',
+        ]
+    ],
+    '29 Seater' => [
+        'Capacity' => '29+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '29-33-37seater/29-33-37seater-1.jpg',
+            '29-33-37seater/29-33-37seater-2.jpg',
+            '29-33-37seater/29-33-37seater-3.jpg',
+            '29-33-37seater/29-33-37seater-4.jpg',
+            '29-33-37seater/29-33-37seater-5.jpg',
+            '29-33-37seater/29-33-37seater-6.jpg',
+        ]
+    ],
+    '33 Seater' => [
+        'Capacity' => '33+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '29-33-37seater/29-33-37seater-1.jpg',
+            '29-33-37seater/29-33-37seater-2.jpg',
+            '29-33-37seater/29-33-37seater-3.jpg',
+            '29-33-37seater/29-33-37seater-4.jpg',
+            '29-33-37seater/29-33-37seater-5.jpg',
+            '29-33-37seater/29-33-37seater-6.jpg',
+        ]
+    ],
+    '37 Seater' => [
+        'Capacity' => '37+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '29-33-37seater/29-33-37seater-1.jpg',
+            '29-33-37seater/29-33-37seater-2.jpg',
+            '29-33-37seater/29-33-37seater-3.jpg',
+            '29-33-37seater/29-33-37seater-4.jpg',
+            '29-33-37seater/29-33-37seater-5.jpg',
+            '29-33-37seater/29-33-37seater-6.jpg',
+        ]
+    ],
+    '41 Seater' => [
+        'Capacity' => '41+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '29-33-37seater/29-33-37seater-1.jpg',
+            '29-33-37seater/29-33-37seater-2.jpg',
+            '29-33-37seater/29-33-37seater-3.jpg',
+            '29-33-37seater/29-33-37seater-4.jpg',
+            '29-33-37seater/29-33-37seater-5.jpg',
+            '29-33-37seater/29-33-37seater-6.jpg',
+        ]
+    ],
+    '45 Seater' => [
+        'Capacity' => '45+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '29-33-37seater/29-33-37seater-1.jpg',
+            '29-33-37seater/29-33-37seater-2.jpg',
+            '29-33-37seater/29-33-37seater-3.jpg',
+            '29-33-37seater/29-33-37seater-4.jpg',
+            '29-33-37seater/29-33-37seater-5.jpg',
+            '29-33-37seater/29-33-37seater-6.jpg',
+        ]
+    ],
+    '49 Seater' => [
+        'Capacity' => '49+1',
+        'Minimum KMs' => '300km',
+        'Tolltax' => 'To be Paid by Customer',
+        'Border Tax' => 'If Applicable',
+        'Parking Charge' => 'Customer',
+        'Local Service' => '-',
+        'Extra KMS' => 'As per Inquiry',
+        'Extra HRS' => '-',
+        'Airport Service' => '-',
+        'Airport Duty' => 'On Request',
+        'Images' => [
+            '29-33-37seater/29-33-37seater-1.jpg',
+            '29-33-37seater/29-33-37seater-2.jpg',
+            '29-33-37seater/29-33-37seater-3.jpg',
+            '29-33-37seater/29-33-37seater-4.jpg',
+            '29-33-37seater/29-33-37seater-5.jpg',
+            '29-33-37seater/29-33-37seater-6.jpg',
+        ]
+    ],
+];
+?>
+
+<div class="flex flex-col md:flex-row mx-auto px-4 py-8 gap-8 text-gray-600 overflow-hidden md:px-4">
+    <div>
+        <section class="mb-8">
+            <!-- Image Section -->
+            <div id="image-grid" class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                <!-- Default to 20 Seater images initially -->
+                <?php foreach ($busRates['20 Seater']['Images'] as $image): ?>
+                    <img src="images/bus_img/<?php echo $image; ?>" alt="Bus 20 Seater" class="w-full h-auto">
+                <?php endforeach; ?>
+            </div>
+        </section>
+
+        <section class="mb-8">
+
+            <!-- Buttons -->
+            <div class="mb-4 flex justify-center space-x-2">
+                <?php foreach ($busRates as $busType => $rates): ?>
+                    <button class="py-2 px-4 font-semibold border border-transparent rounded-full bg-gradient-to-r from-red-500 to-pink-500 text-white hover:shadow-lg transform transition-all duration-200" onclick="showTableAndImages('<?php echo strtolower(str_replace(' ', '-', $busType)); ?>')">
+                        <?php echo $busType; ?>
+                    </button>
+                <?php endforeach; ?>
+            </div>
+
+            <!-- Rate Tables -->
+            <?php foreach ($busRates as $busType => $rates): ?>
+                <div id="<?php echo strtolower(str_replace(' ', '-', $busType)); ?>" class="rate-table rounded-3xl shadow-lg overflow-hidden <?php echo $busType === '20 Seater' ? '' : 'hidden'; ?>">
+                    <table class="table-auto w-full bg-white transition-all duration-300">
+                        <thead class="bg-gradient-to-r from-red-400 to-pink-500 text-white">
+                            <tr>
+                                <th class="px-4 py-2 text-left">Service Type</th>
+                                <th class="px-4 py-2 text-left">Rate/Prices</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <?php foreach ($rates as $item => $price): ?>
+                                <?php if ($item !== 'Images'): // Skip the Images key 
+                                ?>
+                                    <tr class="hover:bg-gray-100 transition-colors duration-200">
+                                        <td class="border px-4 py-2 font-semibold"><?php echo $item; ?></td>
+                                        <td class="border px-4 py-2"><?php echo $price; ?></td>
+                                    </tr>
+                                <?php endif; ?>
+                            <?php endforeach; ?>
+                        </tbody>
+                    </table>
+                </div>
+            <?php endforeach; ?>
+
+            <a href="tel:09512646767" class="flex w-full">
+                <button class="px-4 py-4 w-full text-xl bg-gradient-to-r from-amber-500 to-pink-500 text-white font-bold rounded mt-4">HIRE A BUS NOW</button>
+            </a>
+        </section>
+    </div>
+</div>
+
+<script>
+    function showTableAndImages(busType) {
+        // Hide all tables
+        const tables = document.querySelectorAll('.rate-table');
+        tables.forEach(table => {
+            table.classList.add('hidden');
+        });
+
+        // Show selected table
+        const selectedTable = document.getElementById(busType);
+        if (selectedTable) {
+            selectedTable.classList.remove('hidden');
+        }
+
+        // Update image grid based on the selected bus type
+        const imageGrid = document.getElementById('image-grid');
+        imageGrid.innerHTML = ''; // Clear existing images
+
+        const busImages = {
+            '20-seater': [
+                'images/bus_img/20-25seater/20-25seater-1.jpg',
+                'images/bus_img/20-25seater/20-25seater-2.jpg',
+                'images/bus_img/20-25seater/20-25seater-3.jpg',
+                'images/bus_img/20-25seater/20-25seater-4.jpg',
+                'images/bus_img/20-25seater/20-25seater-5.jpg',
+                'images/bus_img/20-25seater/20-25seater-6.jpg',
+            ],
+            '25-seater': [
+                'images/bus_img/20-25seater/20-25seater-1.jpg',
+                'images/bus_img/20-25seater/20-25seater-2.jpg',
+                'images/bus_img/20-25seater/20-25seater-3.jpg',
+                'images/bus_img/20-25seater/20-25seater-4.jpg',
+                'images/bus_img/20-25seater/20-25seater-5.jpg',
+                'images/bus_img/20-25seater/20-25seater-6.jpg',
+            ],
+            '29-seater': [
+                'images/bus_img/29-33-37seater/29-33-37seater-1.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-2.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-3.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-4.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-5.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-6.jpg',
+            ],
+            '33-seater': [
+                'images/bus_img/29-33-37seater/29-33-37seater-1.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-2.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-3.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-4.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-5.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-6.jpg',
+            ],
+            '37-seater': [
+                'images/bus_img/29-33-37seater/29-33-37seater-1.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-2.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-3.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-4.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-5.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-6.jpg',
+            ],
+            '41-seater': [
+                'images/bus_img/29-33-37seater/29-33-37seater-1.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-2.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-3.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-4.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-5.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-6.jpg',
+            ],
+            '45-seater': [
+                'images/bus_img/29-33-37seater/29-33-37seater-1.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-2.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-3.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-4.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-5.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-6.jpg',
+            ],
+            '49-seater': [
+                'images/bus_img/29-33-37seater/29-33-37seater-1.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-2.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-3.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-4.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-5.jpg',
+                'images/bus_img/29-33-37seater/29-33-37seater-6.jpg',
+            ],
+            // Add more bus types with their corresponding images here...
+        };
+
+        // Append new images for the selected bus type
+        busImages[busType].forEach(imageSrc => {
+            const imgElement = document.createElement('img');
+            imgElement.src = imageSrc;
+            imgElement.alt = busType;
+            imgElement.classList.add('w-full', 'h-auto');
+            imageGrid.appendChild(imgElement);
+        });
+    }
+</script>
 
 
 <section class="relative py-28 bg-gray-900">
